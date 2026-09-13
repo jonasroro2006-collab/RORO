@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonas Roro</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#14152B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #14152B;
+    --surface: #1E2142;
+    --surface-2: #262A52;
+    --line: #33366B;
+    --text: #F5F3ED;
+    --muted: #9C9CBB;
+    --gold: #F5B841;
+    --coral: #FF5C72;
+    --teal: #33D6A6;
+    --violet: #9B7EDE;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    padding: 24px 12px;
+  }
+  .app{
+    width:100%;
+    max-width: 440px;
+  }
+  h1,h2,h3{
+    font-family:'Sora', sans-serif;
+    margin:0;
+  }
+  .topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: var(--surface);
+    border-radius: 18px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--line);
+  }
+  .stat{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size: 14px;
+    font-weight:600;
+  }
+  .stat.hearts{color:var(--coral);}
+  .stat.xp{color:var(--gold);}
+  .stat.coins{color:var(--gold);}
+  .stat.streak{color:var(--violet);}
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 24px;
+    min-height: 380px;
+    display:flex;
+    flex-direction:column;
+  }
+  .brand{
+    text-align:center;
+    margin-bottom: 18px;
+  }
+  .brand h1{
+    font-size: 26px;
+    font-weight:800;
+    letter-spacing: -0.02em;
+  }
+  .brand p{
+    color: var(--muted);
+    font-size: 14px;
+    margin-top:6px;
+  }
+  .menu-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .menu-btn{
+    background: var(--surface-2);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding: 16px 10px;
+    color: var(--text);
+    font-family:'Sora', sans-serif;
+    font-weight:700;
+    font-size: 14px;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .menu-btn:hover{ border-color: var(--gold); transform: translateY(-2px); }
+  .menu-btn .emoji{ font-size: 22px; }
+  .full-btn{
+    grid-column: 1 / -1;
+  }
+  .cat-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .cat-btn{
+    border-radius:16px;
+    padding: 14px 8px;
+    border: none;
+    color: #14152B;
+    font-family:'Sora', sans-serif;
+    font-weight:700;
+    font-size: 13px;
+    cursor:pointer;
+    text-align:center;
+    line-height:1.3;
+  }
+  .question-text{
+    font-family:'Sora', sans-serif;
+    font-size: 19px;
+    font-weight:700;
+    line-height:1.4;
+    margin: 6px 0 20px 0;
+  }
+  .cat-label{
+    color: var(--muted);
+    font-size: 13px;
+    font-weight:600;
+    margin-bottom:4px;
+  }
+  .answers{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    margin-top:auto;
+  }
+  .answer-btn{
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius:14px;
+    padding: 14px 16px;
+    color: var(--text);
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    font-size: 15px;
+    text-align:left;
+    cursor:pointer;
+  }
+  .answer-btn:hover{ border-color: var(--violet); }
+  .answer-btn.correct{ background: rgba(51,214,166,.18); border-color: var(--teal); color: var(--teal); }
+  .answer-btn.wrong{ background: rgba(255,92,114,.18); border-color: var(--coral); color: var(--coral); }
+  .answer-btn:disabled{ cursor:default; }
+  .result-box{
+    text-align:center;
+    padding: 20px 0;
+  }
+  .result-box .big{
+    font-family:'Sora', sans-serif;
+    font-size:22px;
+    font-weight:800;
+    margin-bottom: 8px;
+  }
+  .result-box.ok .big{ color: var(--teal); }
+  .result-box.ko .big{ color: var(--coral); }
+  .result-box p{ color: var(--muted); font-size:14px; }
+  .btn{
+    background: var(--gold);
+    color: #14152B;
+    border:none;
+    border-radius:14px;
+    padding: 14px;
+    font-family:'Sora', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+    width:100%;
+  }
+  .btn.ghost{
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--text);
+  }
+  .btn-row{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:auto;
+  }
+  .profile-row{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size:14px;
+  }
+  .profile-row span:first-child{ color: var(--muted); }
+  .profile-row span:last-child{ font-weight:700; }
+  .rank-item{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size:14px;
+  }
+  .rank-item .medal{ width:26px; display:inline-block; }
+  .back-link{
+    color: var(--muted);
+    font-size: 13px;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom: 14px;
+    display:inline-block;
+  }
+  .center-msg{
+    text-align:center;
+    margin:auto;
+  }
+  .center-msg .emoji-big{ font-size: 48px; margin-bottom: 12px; }
+  .footer-note{
+    text-align:center;
+    color: var(--muted);
+    font-size:12px;
+    margin-top:14px;
+  }
+  .credit{
+    text-align:center;
+    color: var(--muted);
+    font-size:12px;
+    margin-top:4px;
+    font-family:'Sora', sans-serif;
+    font-weight:600;
+    letter-spacing:0.02em;
+  }
+  .credit span{ color: var(--gold); }
+  #install-btn{
+    display:none;
+    margin-top:10px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar" id="topbar"></div>
+  <div class="card" id="card"></div>
+  <button class="btn" id="install-btn">📲 Installer l'application</button>
+  <div class="footer-note">Quiz Challenge — progression enregistrée sur cet appareil</div>
+  <div class="credit">Créé par <span>Jonas</span></div>
+</div>
+
+<script>
+/* ---------- Données ---------- */
+const CATEGORIES = {
+  culture:      { label: "Culture générale", emoji: "🌍", color: "#F5B841" },
+  calcul:       { label: "Calcul mental",     emoji: "➗", color: "#33D6A6" },
+  informatique: { label: "Informatique",      emoji: "💻", color: "#9B7EDE" },
+  histoire:     { label: "Histoire",          emoji: "📚", color: "#FF9F5C" },
+  sciences:     { label: "Sciences",          emoji: "🔬", color: "#5CC8FF" },
+  sport:        { label: "Sport",             emoji: "⚽", color: "#8FE05C" },
+  cinema:       { label: "Cinéma & musique",  emoji: "🎬", color: "#FF5C9E" },
+  cotedivoire:  { label: "Côte d'Ivoire",     emoji: "🇨🇮", color: "#FF7A5C" },
+  drapeaux:     { label: "Drapeaux du monde", emoji: "🏳️", color: "#5CFFE0" },
+};
+
+// Banque de questions de démarrage — à remplacer par le contenu de questions_bank.py
+const QUESTIONS = {
+  culture: [
+    {q:"Quelle est la capitale de l'Australie ?", options:["Sydney","Canberra","Melbourne","Perth"], correct:1},
+    {q:"Combien y a-t-il de continents ?", options:["5","6","7","8"], correct:2},
+    {q:"Quel est le plus long fleuve du monde ?", options:["Amazone","Nil","Yangtsé","Mississippi"], correct:1},
+    {q:"Dans quel pays se trouve la tour de Pise ?", options:["Espagne","Grèce","Italie","France"], correct:2},
+    {q:"Quelle langue compte le plus de locuteurs natifs ?", options:["Anglais","Mandarin","Espagnol","Hindi"], correct:1},
+    {q:"Quel est le plus grand désert chaud du monde ?", options:["Gobi","Kalahari","Sahara","Atacama"], correct:2},
+  ],
+  informatique: [
+    {q:"Que signifie l'abréviation 'CPU' ?", options:["Central Process Unit","Central Processing Unit","Compute Power Unit","Core Processing Unit"], correct:1},
+    {q:"Quel langage est principalement utilisé pour styliser une page web ?", options:["HTML","CSS","Python","SQL"], correct:1},
+    {q:"Que signifie 'URL' ?", options:["Uniform Resource Locator","Universal Reading Link","United Resource Locator","Uniform Reading List"], correct:0},
+    {q:"Quel format de fichier est utilisé pour les images sans perte de qualité ?", options:["JPEG","PNG","MP3","GIF"], correct:1},
+    {q:"Que veut dire 'RAM' ?", options:["Random Access Memory","Rapid Access Module","Read Access Memory","Random Application Memory"], correct:0},
+    {q:"Quelle entreprise a créé le système Android ?", options:["Apple","Microsoft","Google","Samsung"], correct:2},
+  ],
+  histoire: [
+    {q:"En quelle année a eu lieu la chute du mur de Berlin ?", options:["1987","1989","1991","1993"], correct:1},
+    {q:"Qui était le premier président des États-Unis ?", options:["Abraham Lincoln","Thomas Jefferson","George Washington","John Adams"], correct:2},
+    {q:"En quelle année a débuté la Première Guerre mondiale ?", options:["1912","1914","1916","1918"], correct:1},
+    {q:"Quel empire a construit le Colisée de Rome ?", options:["L'empire grec","L'empire romain","L'empire byzantin","L'empire perse"], correct:1},
+    {q:"Quel pharaon est associé à la grande pyramide de Gizeh ?", options:["Toutânkhamon","Khéops","Ramsès II","Akhenaton"], correct:1},
+  ],
+  sciences: [
+    {q:"Quelle est la planète la plus proche du Soleil ?", options:["Vénus","Mercure","Mars","Terre"], correct:1},
+    {q:"Quel gaz les plantes absorbent-elles principalement lors de la photosynthèse ?", options:["Oxygène","Azote","Dioxyde de carbone","Hydrogène"], correct:2},
+    {q:"Combien d'os compte le corps humain adulte ?", options:["186","206","226","246"], correct:1},
+    {q:"Quelle est l'unité de mesure de la force ?", options:["Le watt","Le joule","Le newton","Le volt"], correct:2},
+    {q:"Quel est l'élément chimique dont le symbole est 'O' ?", options:["Or","Oxygène","Osmium","Oganesson"], correct:1},
+  ],
+  sport: [
+    {q:"Tous les combien d'années ont lieu les Jeux Olympiques d'été ?", options:["2 ans","3 ans","4 ans","5 ans"], correct:2},
+    {q:"Combien de joueurs compte une équipe de football sur le terrain ?", options:["9","10","11","12"], correct:2},
+    {q:"Dans quel sport utilise-t-on le terme 'ace' ?", options:["Golf","Tennis","Basketball","Rugby"], correct:1},
+    {q:"Quel pays a remporté la Coupe du Monde de football 2022 ?", options:["France","Brésil","Argentine","Croatie"], correct:2},
+    {q:"Combien de temps dure un match de basketball (NBA), hors prolongations ?", options:["40 minutes","48 minutes","60 minutes","90 minutes"], correct:1},
+  ],
+  cinema: [
+    {q:"Qui a réalisé le film 'Titanic' ?", options:["Steven Spielberg","James Cameron","Christopher Nolan","Martin Scorsese"], correct:1},
+    {q:"Quel studio a produit 'Le Roi Lion' (1994) ?", options:["Pixar","DreamWorks","Disney","Universal"], correct:2},
+    {q:"Quel artiste a chanté 'Thriller' ?", options:["Prince","Michael Jackson","Stevie Wonder","James Brown"], correct:1},
+    {q:"Dans quel film trouve-t-on le personnage de Jack Sparrow ?", options:["Pirates des Caraïbes","Le Seigneur des Anneaux","Indiana Jones","James Bond"], correct:0},
+  ],
+  cotedivoire: [
+    {q:"Quelle est la capitale politique de la Côte d'Ivoire ?", options:["Abidjan","Bouaké","Yamoussoukro","San-Pédro"], correct:2},
+    {q:"Quelle est la monnaie utilisée en Côte d'Ivoire ?", options:["Le cedi","Le franc CFA","Le naira","Le dollar"], correct:1},
+    {q:"Quel est le surnom donné à la Côte d'Ivoire lié au cacao ?", options:["Le pays du café","Le pays de l'or","Premier producteur mondial de cacao","Le pays du diamant"], correct:2},
+    {q:"Quelle est la langue officielle de la Côte d'Ivoire ?", options:["Anglais","Français","Portugais","Arabe"], correct:1},
+  ],
+  drapeaux: [
+    {q:"Le drapeau avec une feuille d'érable rouge appartient à quel pays ?", options:["Suisse","Autriche","Canada","Pérou"], correct:2},
+    {q:"Quel pays a un drapeau avec un dragon vert ?", options:["Bhoutan","Népal","Thaïlande","Chine"], correct:0},
+    {q:"À quel pays appartient un drapeau orange, blanc, vert (bandes verticales) ?", options:["Irlande","Côte d'Ivoire","Italie","Nigeria"], correct:1},
+    {q:"Le drapeau blanc et rouge avec un cercle central appartient à quel pays ?", options:["Canada","Japon","Pologne","Suisse"], correct:1},
+  ],
+};
+
+/* ---------- Constantes ---------- */
+const LIFE_MAX = 5;
+const LIFE_RECOVERY_SECONDS = 2 * 60;
+const STORAGE_KEY = "quiz_challenge_profile_v1";
+
+/* ---------- État / persistance ---------- */
+function defaultProfile(){
+  return {
+    xp:0, coins:0, lives:LIFE_MAX, score:0,
+    questions_played:0, correct_answers:0,
+    current_streak:0, best_streak:0,
+    last_life_at:0,
+    answered: {},
+    best_score_ever:0,
+  };
+}
+function loadProfile(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return defaultProfile();
+    return Object.assign(defaultProfile(), JSON.parse(raw));
+  }catch(e){ return defaultProfile(); }
+}
+function saveProfile(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(profile)); }
+
+let profile = loadProfile();
+let state = { screen: "home", category: null, currentQ: null, answered: false, lastCorrect: false };
+
+function level(){ return Math.floor(profile.xp/100)+1; }
+
+/* ---------- Récupération des vies ---------- */
+function recoverLives(){
+  const now = Math.floor(Date.now()/1000);
+  if(profile.lives >= LIFE_MAX){ profile.last_life_at = 0; return; }
+  if(profile.last_life_at <= 0){ profile.last_life_at = now; return; }
+  const elapsed = now - profile.last_life_at;
+  const recovered = Math.min(LIFE_MAX - profile.lives, Math.floor(elapsed / LIFE_RECOVERY_SECONDS));
+  if(recovered > 0){
+    profile.lives += recovered;
+    profile.last_life_at += recovered * LIFE_RECOVERY_SECONDS;
+    if(profile.lives >= LIFE_MAX) profile.last_life_at = 0;
+  }
+}
+function nextLifeIn(){
+  if(profile.lives >= LIFE_MAX || profile.last_life_at === 0) return 0;
+  const now = Math.floor(Date.now()/1000);
+  return Math.max(0, LIFE_RECOVERY_SECONDS - (now - profile.last_life_at));
+}
+function formatCountdown(sec){
+  sec = Math.max(0, Math.floor(sec));
+  const m = Math.floor(sec/60), s = sec%60;
+  return `${m}min ${String(s).padStart(2,"0")}s`;
+}
+
+/* ---------- Génération question de calcul ---------- */
+function createMathQuestion(){
+  const ops = [["+",(a,b)=>a+b], ["−",(a,b)=>a-b], ["×",(a,b)=>a*b]];
+  const [symbol, fn] = ops[Math.floor(Math.random()*ops.length)];
+  let a = Math.floor(Math.random()*30)+1;
+  let b = Math.floor(Math.random()*30)+1;
+  if(symbol === "−" && b > a){ [a,b] = [b,a]; }
+  const correct = fn(a,b);
+  const optionsSet = new Set([correct]);
+  while(optionsSet.size < 4){
+    const delta = Math.floor(Math.random()*15)+1;
+    const candidate = correct + (Math.random()<0.5 ? -delta : delta);
+    if(candidate >= 0) optionsSet.add(candidate);
+  }
+  const options = Array.from(optionsSet).sort(()=>Math.random()-0.5);
+  return {
+    q: `Combien font ${a} ${symbol} ${b} ?`,
+    options: options.map(String),
+    correct: options.indexOf(correct),
+  };
+}
+
+/* ---------- Sélection question ---------- */
+function pickQuestion(category){
+  if(category === "calcul") return createMathQuestion();
+
+  let pool = category === "random"
+    ? Object.keys(QUESTIONS).flatMap(c => QUESTIONS[c].map((q,i)=>({...q, cat:c, idx:i})))
+    : QUESTIONS[category].map((q,i)=>({...q, cat:category, idx:i}));
+
+  const answeredForCat = (c) => profile.answered[c] || [];
+  let unanswered = pool.filter(item => !answeredForCat(item.cat).includes(item.idx));
+
+  if(unanswered.length === 0){
+    if(category === "random"){
+      Object.keys(QUESTIONS).forEach(c => { profile.answered[c] = []; });
+    } else {
+      profile.answered[category] = [];
+    }
+    unanswered = pool;
+  }
+  return unanswered[Math.floor(Math.random()*unanswered.length)];
+}
+
+/* ---------- Rendu ---------- */
+function renderTopbar(){
+  const topbar = document.getElementById("topbar");
+  topbar.innerHTML = `
+    <div class="stat hearts">❤️ ${profile.lives}/${LIFE_MAX}</div>
+    <div class="stat xp">⭐ ${profile.xp}</div>
+    <div class="stat coins">🪙 ${profile.coins}</div>
+    <div class="stat streak">🔥 ${profile.current_streak}</div>
+  `;
+}
+
+function renderHome(){
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <div class="brand">
+      <h1>🤖 Quiz Challenge</h1>
+      <p>Testez vos connaissances, gagnez de l'XP et grimpez de niveau.</p>
+    </div>
+    <div class="menu-grid">
+      <button class="menu-btn full-btn" data-go="categories"><span class="emoji">🎮</span>Jouer</button>
+      <button class="menu-btn" data-go="profile"><span class="emoji">👤</span>Profil</button>
+      <button class="menu-btn" data-go="ranking"><span class="emoji">🏆</span>Classement</button>
+      <button class="menu-btn full-btn" data-go="help"><span class="emoji">ℹ️</span>Aide</button>
+    </div>
+  `;
+  card.querySelectorAll("[data-go]").forEach(btn=>{
+    btn.onclick = ()=> go(btn.dataset.go);
+  });
+}
+
+function renderCategories(){
+  const card = document.getElementById("card");
+  let html = `<a class="back-link" data-go="home">⬅️ Retour</a><h3 style="margin-bottom:14px;">Choisissez une catégorie</h3><div class="cat-grid">`;
+  Object.entries(CATEGORIES).forEach(([key,c])=>{
+    html += `<button class="cat-btn" style="background:${c.color}" data-cat="${key}">${c.emoji}<br>${c.label}</button>`;
+  });
+  html += `<button class="cat-btn full-btn" style="background:#F5F3ED; grid-column:1/-1;" data-cat="random">🎯 Mode aléatoire</button>`;
+  html += `</div>`;
+  card.innerHTML = html;
+  card.querySelector("[data-go='home']").onclick = ()=> go("home");
+  card.querySelectorAll("[data-cat]").forEach(btn=>{
+    btn.onclick = ()=> startQuestion(btn.dataset.cat);
+  });
+}
+
+function startQuestion(category){
+  recoverLives();
+  saveProfile();
+  if(profile.lives <= 0){
+    state.screen = "gameover";
+    state.category = category;
+    render();
+    return;
+  }
+  state.category = category;
+  state.currentQ = pickQuestion(category);
+  state.answered = false;
+  state.screen = "question";
+  render();
+}
+
+function renderQuestion(){
+  const card = document.getElementById("card");
+  const q = state.currentQ;
+  const cat = state.category === "random" ? {label:"Mode aléatoire", emoji:"🎯"} : CATEGORIES[q.cat || state.category];
+  card.innerHTML = `
+    <a class="back-link" id="back-to-cats">⬅️ Changer de catégorie</a>
+    <div class="cat-label">${cat.emoji} ${cat.label}</div>
+    <div class="question-text">${q.q}</div>
+    <div class="answers">
+      ${q.options.map((opt,i)=>`<button class="answer-btn" data-i="${i}">${opt}</button>`).join("")}
+    </div>
+  `;
+  document.getElementById("back-to-cats").onclick = ()=> go("categories");
+  card.querySelectorAll(".answer-btn").forEach(btn=>{
+    btn.onclick = ()=> answerQuestion(parseInt(btn.dataset.i));
+  });
+}
+
+function answerQuestion(i){
+  if(state.answered) return;
+  state.answered = true;
+  const q = state.currentQ;
+  const correct = i === q.correct;
+  state.lastCorrect = correct;
+  const realCat = q.cat || state.category;
+
+  if(!profile.answered[realCat]) profile.answered[realCat] = [];
+  if(q.idx !== undefined && !profile.answered[realCat].includes(q.idx)){
+    profile.answered[realCat].push(q.idx);
+  }
+
+  document.querySelectorAll(".answer-btn").forEach((btn,idx)=>{
+    btn.disabled = true;
+    if(idx === q.correct) btn.classList.add("correct");
+    else if(idx === i) btn.classList.add("wrong");
+  });
+
+  profile.questions_played += 1;
+
+  if(correct){
+    profile.xp += 10;
+    profile.coins += 5;
+    profile.score += 1;
+    profile.correct_answers += 1;
+    profile.current_streak += 1;
+    profile.best_streak = Math.max(profile.best_streak, profile.current_streak);
+    if(profile.score > profile.best_score_ever) profile.best_score_ever = profile.score;
+  } else {
+    profile.lives = Math.max(0, profile.lives - 1);
+    profile.current_streak = 0;
+    if(profile.lives < LIFE_MAX && profile.last_life_at === 0){
+      profile.last_life_at = Math.floor(Date.now()/1000);
+    }
+  }
+  saveProfile();
+  renderTopbar();
+
+  setTimeout(()=>{
+    state.screen = (profile.lives <= 0 && !correct) ? "gameover" : "result";
+    render();
+  }, 900);
+}
+
+function renderResult(){
+  const card = document.getElementById("card");
+  const q = state.currentQ;
+  card.innerHTML = `
+    <div class="result-box ${state.lastCorrect ? "ok":"ko"}">
+      <div class="big">${state.lastCorrect ? "✅ Bonne réponse !" : "❌ Mauvaise réponse"}</div>
+      ${state.lastCorrect
+        ? `<p>+10 XP · +5 pièces · Série ${profile.current_streak}</p>`
+        : `<p>La bonne réponse était : <b>${q.options[q.correct]}</b></p>`}
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="next">➡️ Question suivante</button>
+      <button class="btn ghost" id="change-cat">🔀 Changer de catégorie</button>
+      <button class="btn ghost" id="btn-home">🏠 Menu principal</button>
+    </div>
+  `;
+  document.getElementById("next").onclick = ()=> startQuestion(state.category);
+  document.getElementById("change-cat").onclick = ()=> go("categories");
+  document.getElementById("btn-home").onclick = ()=> go("home");
+}
+
+function renderGameOver(){
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <div class="center-msg">
+      <div class="emoji-big">💀</div>
+      <h2>Game Over</h2>
+      <p style="color:var(--muted); margin-top:10px;">Vous n'avez plus de vies.</p>
+      <p style="color:var(--muted);">⏳ Prochaine vie dans : <b>${formatCountdown(nextLifeIn())}</b></p>
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="refresh">🔄 Actualiser</button>
+      <button class="btn ghost" id="btn-home">🏠 Menu</button>
+    </div>
+  `;
+  document.getElementById("refresh").onclick = ()=>{ recoverLives(); saveProfile(); render(); };
+  document.getElementById("btn-home").onclick = ()=> go("home");
+}
+
+function renderProfile(){
+  recoverLives(); saveProfile();
+  const pct = profile.questions_played ? Math.round(profile.correct_answers*1000/profile.questions_played)/10 : 0;
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <a class="back-link" data-go="home">⬅️ Retour</a>
+    <h3 style="margin-bottom:10px;">👤 Votre profil</h3>
+    <div class="profile-row"><span>Niveau</span><span>${level()}</span></div>
+    <div class="profile-row"><span>XP</span><span>${profile.xp}</span></div>
+    <div class="profile-row"><span>Pièces</span><span>${profile.coins}</span></div>
+    <div class="profile-row"><span>Vies</span><span>${profile.lives}/${LIFE_MAX}${profile.lives<LIFE_MAX ? " · "+formatCountdown(nextLifeIn()) : ""}</span></div>
+    <div class="profile-row"><span>Score</span><span>${profile.score}</span></div>
+    <div class="profile-row"><span>Questions répondues</span><span>${profile.questions_played}</span></div>
+    <div class="profile-row"><span>Réussite</span><span>${pct}%</span></div>
+    <div class="profile-row"><span>Série actuelle</span><span>${profile.current_streak}</span></div>
+    <div class="profile-row"><span>Meilleure série</span><span>${profile.best_streak}</span></div>
+  `;
+  card.querySelector("[data-go='home']").onclick = ()=> go("home");
+}
+
+function renderRanking(){
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <a class="back-link" data-go="home">⬅️ Retour</a>
+    <h3 style="margin-bottom:10px;">🏆 Classement</h3>
+    <div class="rank-item"><span><span class="medal">🥇</span>Votre meilleur score</span><span>${profile.best_score_ever}</span></div>
+    <div class="rank-item"><span><span class="medal">🔥</span>Meilleure série</span><span>${profile.best_streak}</span></div>
+    <p style="color:var(--muted); font-size:13px; margin-top:14px;">
+      Ce classement est local à cet appareil (l'appli fonctionne sans serveur).
+      Pour un classement partagé entre tous les joueurs de votre site, il faudra
+      ajouter un petit backend plus tard.
+    </p>
+  `;
+  card.querySelector("[data-go='home']").onclick = ()=> go("home");
+}
+
+function renderHelp(){
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <a class="back-link" data-go="home">⬅️ Retour</a>
+    <h3 style="margin-bottom:10px;">ℹ️ Aide</h3>
+    <p style="color:var(--muted); font-size:14px; line-height:1.6;">
+      🎮 Choisissez une catégorie et répondez aux questions.<br>
+      ⭐ Une bonne réponse rapporte de l'XP.<br>
+      🪙 Vous gagnez également des pièces.<br>
+      ❤️ Une mauvaise réponse fait perdre une vie.<br>
+      🏆 Votre score apparaît dans votre profil.<br><br>
+      L'appli évite de reproposer une question déjà répondue jusqu'à épuisement de la catégorie.
+    </p>
+  `;
+  card.querySelector("[data-go='home']").onclick = ()=> go("home");
+}
+
+function go(screen){
+  state.screen = screen;
+  render();
+}
+
+function render(){
+  recoverLives();
+  saveProfile();
+  renderTopbar();
+  if(state.screen === "home") renderHome();
+  else if(state.screen === "categories") renderCategories();
+  else if(state.screen === "question") renderQuestion();
+  else if(state.screen === "result") renderResult();
+  else if(state.screen === "gameover") renderGameOver();
+  else if(state.screen === "profile") renderProfile();
+  else if(state.screen === "ranking") renderRanking();
+  else if(state.screen === "help") renderHelp();
+}
+
+render();
+
+/* ---------- PWA : service worker + bouton d'installation ---------- */
+if("serviceWorker" in navigator){
+  window.addEventListener("load", ()=>{
+    navigator.serviceWorker.register("sw.js").catch(()=>{});
+  });
+}
+let deferredPrompt = null;
+window.addEventListener("beforeinstallprompt", (e)=>{
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById("install-btn").style.display = "block";
+});
+document.getElementById("install-btn").addEventListener("click", async ()=>{
+  if(!deferredPrompt) return;
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  document.getElementById("install-btn").style.display = "none";
+});
+window.addEventListener("appinstalled", ()=>{
+  document.getElementById("install-btn").style.display = "none";
+});
+</script>
+</body>
+</html>
