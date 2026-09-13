@@ -278,61 +278,6412 @@ const CATEGORIES = {
 
 // Banque de questions de démarrage — à remplacer par le contenu de questions_bank.py
 const QUESTIONS = {
-  culture: [
-    {q:"Quelle est la capitale de l'Australie ?", options:["Sydney","Canberra","Melbourne","Perth"], correct:1},
-    {q:"Combien y a-t-il de continents ?", options:["5","6","7","8"], correct:2},
-    {q:"Quel est le plus long fleuve du monde ?", options:["Amazone","Nil","Yangtsé","Mississippi"], correct:1},
-    {q:"Dans quel pays se trouve la tour de Pise ?", options:["Espagne","Grèce","Italie","France"], correct:2},
-    {q:"Quelle langue compte le plus de locuteurs natifs ?", options:["Anglais","Mandarin","Espagnol","Hindi"], correct:1},
-    {q:"Quel est le plus grand désert chaud du monde ?", options:["Gobi","Kalahari","Sahara","Atacama"], correct:2},
+  "culture": [
+    {
+      "q": "Quelle est la capitale de l'Australie ?",
+      "options": [
+        "Sydney",
+        "Canberra",
+        "Melbourne",
+        "Perth"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien y a-t-il de continents ?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le plus long fleuve du monde ?",
+      "options": [
+        "Amazone",
+        "Nil",
+        "Yangtsé",
+        "Mississippi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel pays se trouve la tour de Pise ?",
+      "options": [
+        "Espagne",
+        "Grèce",
+        "Italie",
+        "France"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle langue compte le plus de locuteurs natifs ?",
+      "options": [
+        "Anglais",
+        "Mandarin",
+        "Espagnol",
+        "Hindi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus grand désert chaud du monde ?",
+      "options": [
+        "Gobi",
+        "Kalahari",
+        "Sahara",
+        "Atacama"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Japon ?",
+      "options": [
+        "Osaka",
+        "Kyoto",
+        "Tokyo",
+        "Nagoya"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de pays composent l'Union africaine ?",
+      "options": [
+        "44",
+        "55",
+        "61",
+        "70"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande île du monde ?",
+      "options": [
+        "Madagascar",
+        "Bornéo",
+        "Groenland",
+        "Sumatra"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays est surnommé le 'pays du soleil levant' ?",
+      "options": [
+        "Chine",
+        "Corée du Sud",
+        "Japon",
+        "Thaïlande"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la monnaie officielle du Japon ?",
+      "options": [
+        "Le won",
+        "Le yen",
+        "Le yuan",
+        "Le ringgit"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien y a-t-il d'océans sur Terre ?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le plus petit pays du monde ?",
+      "options": [
+        "Monaco",
+        "Saint-Marin",
+        "Vatican",
+        "Liechtenstein"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel pays se trouve le Machu Picchu ?",
+      "options": [
+        "Bolivie",
+        "Chili",
+        "Équateur",
+        "Pérou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la capitale du Canada ?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa",
+        "Montréal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel fleuve traverse Paris ?",
+      "options": [
+        "La Loire",
+        "La Seine",
+        "Le Rhône",
+        "La Garonne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus haute montagne du monde ?",
+      "options": [
+        "K2",
+        "Mont Blanc",
+        "Everest",
+        "Kilimandjaro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a pour capitale Brasília ?",
+      "options": [
+        "Argentine",
+        "Brésil",
+        "Colombie",
+        "Venezuela"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de pays composent le continent sud-américain ?",
+      "options": [
+        "10",
+        "12",
+        "13",
+        "15"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle mer borde l'Égypte au nord ?",
+      "options": [
+        "Mer Rouge",
+        "Mer Noire",
+        "Mer Méditerranée",
+        "Mer Caspienne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de l'Allemagne ?",
+      "options": [
+        "Munich",
+        "Francfort",
+        "Hambourg",
+        "Berlin"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pays possède le plus grand nombre d'habitants au monde ?",
+      "options": [
+        "Chine",
+        "Inde",
+        "États-Unis",
+        "Indonésie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle langue est parlée au Brésil ?",
+      "options": [
+        "Espagnol",
+        "Portugais",
+        "Français",
+        "Italien"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du détroit séparant l'Europe de l'Afrique ?",
+      "options": [
+        "Détroit de Bering",
+        "Détroit de Gibraltar",
+        "Détroit de Malacca",
+        "Détroit du Bosphore"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de l'Égypte ?",
+      "options": [
+        "Alexandrie",
+        "Le Caire",
+        "Louxor",
+        "Gizeh"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a la forme d'une botte sur la carte ?",
+      "options": [
+        "Espagne",
+        "Grèce",
+        "Italie",
+        "Portugal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la plus grande forêt tropicale du monde ?",
+      "options": [
+        "Forêt du Congo",
+        "Forêt amazonienne",
+        "Forêt boréale",
+        "Forêt de Bornéo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est célèbre pour ses pyramides de Gizeh ?",
+      "options": [
+        "Soudan",
+        "Égypte",
+        "Libye",
+        "Maroc"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de fuseaux horaires compte la Terre ?",
+      "options": [
+        "12",
+        "20",
+        "24",
+        "30"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de l'Espagne ?",
+      "options": [
+        "Barcelone",
+        "Séville",
+        "Madrid",
+        "Valence"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel océan borde la côte ouest des États-Unis ?",
+      "options": [
+        "Atlantique",
+        "Pacifique",
+        "Indien",
+        "Arctique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Royaume-Uni ?",
+      "options": [
+        "Manchester",
+        "Liverpool",
+        "Londres",
+        "Birmingham"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays africain n'a jamais été colonisé ?",
+      "options": [
+        "Ghana",
+        "Éthiopie",
+        "Kenya",
+        "Sénégal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande ville d'Afrique par population ?",
+      "options": [
+        "Le Caire",
+        "Lagos",
+        "Kinshasa",
+        "Johannesburg"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays possède le plus de fuseaux horaires ?",
+      "options": [
+        "Russie",
+        "Chine",
+        "France",
+        "Canada"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de l'Italie ?",
+      "options": [
+        "Milan",
+        "Naples",
+        "Rome",
+        "Turin"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel désert couvre une grande partie du sud de l'Afrique ?",
+      "options": [
+        "Sahara",
+        "Kalahari",
+        "Gobi",
+        "Namib"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la Russie ?",
+      "options": [
+        "Saint-Pétersbourg",
+        "Moscou",
+        "Novossibirsk",
+        "Kazan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est traversé par l'équateur et porte ce nom ?",
+      "options": [
+        "Colombie",
+        "Équateur",
+        "Pérou",
+        "Brésil"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la Chine ?",
+      "options": [
+        "Shanghai",
+        "Hong Kong",
+        "Pékin",
+        "Canton"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Corée du Sud ?",
+      "options": [
+        "Busan",
+        "Séoul",
+        "Incheon",
+        "Daegu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus grand pays du monde par superficie ?",
+      "options": [
+        "Canada",
+        "Chine",
+        "États-Unis",
+        "Russie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la capitale du Sénégal ?",
+      "options": [
+        "Thiès",
+        "Dakar",
+        "Saint-Louis",
+        "Touba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays possède le plus long littoral du monde ?",
+      "options": [
+        "Australie",
+        "Canada",
+        "Russie",
+        "Indonésie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Ghana ?",
+      "options": [
+        "Kumasi",
+        "Accra",
+        "Tamale",
+        "Cape Coast"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est traversé par le tropique du Cancer et compte pour capitale Le Caire ?",
+      "options": [
+        "Soudan",
+        "Égypte",
+        "Libye",
+        "Algérie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Maroc ?",
+      "options": [
+        "Casablanca",
+        "Marrakech",
+        "Rabat",
+        "Fès"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel océan est le plus grand du monde ?",
+      "options": [
+        "Atlantique",
+        "Indien",
+        "Pacifique",
+        "Arctique"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Nigeria ?",
+      "options": [
+        "Lagos",
+        "Abuja",
+        "Kano",
+        "Ibadan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a pour capitale Bamako ?",
+      "options": [
+        "Burkina Faso",
+        "Mali",
+        "Niger",
+        "Guinée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la Guinée ?",
+      "options": [
+        "Kankan",
+        "Conakry",
+        "Labé",
+        "Nzérékoré"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus petit continent du monde ?",
+      "options": [
+        "Europe",
+        "Antarctique",
+        "Océanie",
+        "Amérique du Sud"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Burkina Faso ?",
+      "options": [
+        "Bobo-Dioulasso",
+        "Ouagadougou",
+        "Koudougou",
+        "Banfora"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est entièrement entouré par l'Afrique du Sud ?",
+      "options": [
+        "Botswana",
+        "Lesotho",
+        "Eswatini",
+        "Zimbabwe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la Tunisie ?",
+      "options": [
+        "Sfax",
+        "Sousse",
+        "Tunis",
+        "Bizerte"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays possède le plus d'îles au monde ?",
+      "options": [
+        "Philippines",
+        "Indonésie",
+        "Suède",
+        "Norvège"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de l'Algérie ?",
+      "options": [
+        "Oran",
+        "Alger",
+        "Constantine",
+        "Annaba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel fleuve africain est le plus long ?",
+      "options": [
+        "Congo",
+        "Niger",
+        "Nil",
+        "Zambèze"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale du Kenya ?",
+      "options": [
+        "Mombasa",
+        "Nairobi",
+        "Kisumu",
+        "Nakuru"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays d'Amérique du Sud a pour langue officielle le portugais ?",
+      "options": [
+        "Argentine",
+        "Chili",
+        "Brésil",
+        "Pérou"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Thaïlande ?",
+      "options": [
+        "Chiang Mai",
+        "Bangkok",
+        "Phuket",
+        "Pattaya"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays européen est constitué d'îles et de fjords, connu pour son climat froid ?",
+      "options": [
+        "Danemark",
+        "Norvège",
+        "Belgique",
+        "Pays-Bas"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Cameroun ?",
+      "options": [
+        "Douala",
+        "Yaoundé",
+        "Garoua",
+        "Bafoussam"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est célèbre pour ses tulipes et ses moulins à vent ?",
+      "options": [
+        "Belgique",
+        "Pays-Bas",
+        "Danemark",
+        "Allemagne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la Guinée équatoriale ?",
+      "options": [
+        "Bata",
+        "Malabo",
+        "Ebebiyin",
+        "Mongomo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays possède la plus grande population musulmane au monde ?",
+      "options": [
+        "Arabie Saoudite",
+        "Pakistan",
+        "Indonésie",
+        "Iran"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Côte d'Ivoire voisine, le Liberia ?",
+      "options": [
+        "Monrovia",
+        "Buchanan",
+        "Gbarnga",
+        "Kakata"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand lac d'Afrique ?",
+      "options": [
+        "Lac Tchad",
+        "Lac Victoria",
+        "Lac Malawi",
+        "Lac Tanganyika"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Togo ?",
+      "options": [
+        "Sokodé",
+        "Lomé",
+        "Kara",
+        "Kpalimé"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est célèbre pour la Grande Barrière de corail ?",
+      "options": [
+        "Nouvelle-Zélande",
+        "Australie",
+        "Indonésie",
+        "Philippines"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Bénin ?",
+      "options": [
+        "Cotonou",
+        "Porto-Novo",
+        "Parakou",
+        "Abomey"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays d'Asie est constitué de plus de 7000 îles ?",
+      "options": [
+        "Indonésie",
+        "Philippines",
+        "Japon",
+        "Malaisie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale de la France ?",
+      "options": [
+        "Marseille",
+        "Lyon",
+        "Paris",
+        "Toulouse"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel désert se trouve en grande partie en Mongolie et en Chine ?",
+      "options": [
+        "Sahara",
+        "Gobi",
+        "Kalahari",
+        "Atacama"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale des États-Unis ?",
+      "options": [
+        "New York",
+        "Los Angeles",
+        "Washington D.C.",
+        "Chicago"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays possède le mont Kilimandjaro, plus haut sommet d'Afrique ?",
+      "options": [
+        "Kenya",
+        "Tanzanie",
+        "Ouganda",
+        "Éthiopie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la capitale du Portugal ?",
+      "options": [
+        "Porto",
+        "Lisbonne",
+        "Faro",
+        "Braga"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays est séparé de l'Europe par le détroit de Gibraltar ?",
+      "options": [
+        "Tunisie",
+        "Algérie",
+        "Maroc",
+        "Libye"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la capitale de la Grèce ?",
+      "options": [
+        "Thessalonique",
+        "Athènes",
+        "Héraklion",
+        "Patras"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du plus grand archipel du monde ?",
+      "options": [
+        "Philippines",
+        "Indonésie",
+        "Japon",
+        "Maldives"
+      ],
+      "correct": 1
+    }
   ],
-  informatique: [
-    {q:"Que signifie l'abréviation 'CPU' ?", options:["Central Process Unit","Central Processing Unit","Compute Power Unit","Core Processing Unit"], correct:1},
-    {q:"Quel langage est principalement utilisé pour styliser une page web ?", options:["HTML","CSS","Python","SQL"], correct:1},
-    {q:"Que signifie 'URL' ?", options:["Uniform Resource Locator","Universal Reading Link","United Resource Locator","Uniform Reading List"], correct:0},
-    {q:"Quel format de fichier est utilisé pour les images sans perte de qualité ?", options:["JPEG","PNG","MP3","GIF"], correct:1},
-    {q:"Que veut dire 'RAM' ?", options:["Random Access Memory","Rapid Access Module","Read Access Memory","Random Application Memory"], correct:0},
-    {q:"Quelle entreprise a créé le système Android ?", options:["Apple","Microsoft","Google","Samsung"], correct:2},
+  "informatique": [
+    {
+      "q": "Que signifie l'abréviation 'CPU' ?",
+      "options": [
+        "Central Process Unit",
+        "Central Processing Unit",
+        "Compute Power Unit",
+        "Core Processing Unit"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel langage est principalement utilisé pour styliser une page web ?",
+      "options": [
+        "HTML",
+        "CSS",
+        "Python",
+        "SQL"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'URL' ?",
+      "options": [
+        "Uniform Resource Locator",
+        "Universal Reading Link",
+        "United Resource Locator",
+        "Uniform Reading List"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel format de fichier est utilisé pour les images sans perte de qualité ?",
+      "options": [
+        "JPEG",
+        "PNG",
+        "MP3",
+        "GIF"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que veut dire 'RAM' ?",
+      "options": [
+        "Random Access Memory",
+        "Rapid Access Module",
+        "Read Access Memory",
+        "Random Application Memory"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le système Android ?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "Samsung"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'HTML' ?",
+      "options": [
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "HyperText Modern Link",
+        "Home Tool Markup Language"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le langage de programmation créé par Guido van Rossum ?",
+      "options": [
+        "Java",
+        "Python",
+        "Ruby",
+        "PHP"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'WWW' ?",
+      "options": [
+        "World Wide Web",
+        "World Web Wide",
+        "Wide World Web",
+        "Web World Wide"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le logiciel Photoshop ?",
+      "options": [
+        "Microsoft",
+        "Corel",
+        "Adobe",
+        "Autodesk"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le symbole utilisé pour les commentaires en Python ?",
+      "options": [
+        "//",
+        "#",
+        "/*",
+        "--"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'PDF' ?",
+      "options": [
+        "Portable Document Format",
+        "Public Document File",
+        "Printed Document Format",
+        "Personal Data File"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel navigateur a été développé par Google ?",
+      "options": [
+        "Firefox",
+        "Safari",
+        "Chrome",
+        "Edge"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'GIF' ?",
+      "options": [
+        "Graphics Interchange Format",
+        "General Image File",
+        "Graphic Interface Format",
+        "Global Image Format"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réseau social a été fondé par Mark Zuckerberg ?",
+      "options": [
+        "Twitter",
+        "Facebook",
+        "Instagram",
+        "LinkedIn"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'USB' ?",
+      "options": [
+        "Universal Serial Bus",
+        "United Serial Bus",
+        "Universal System Bus",
+        "Unique Serial Bus"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel système d'exploitation est développé par Apple pour ses ordinateurs ?",
+      "options": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Chrome OS"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'AI' en anglais ?",
+      "options": [
+        "Automated Interface",
+        "Artificial Intelligence",
+        "Advanced Internet",
+        "Application Integration"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel langage sert principalement à interroger des bases de données ?",
+      "options": [
+        "SQL",
+        "CSS",
+        "HTML",
+        "JSON"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est l'unité de base utilisée pour mesurer une capacité de stockage ?",
+      "options": [
+        "Le hertz",
+        "L'octet",
+        "Le volt",
+        "Le watt"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau social est axé sur le partage de photos et vidéos courtes très populaire chez les jeunes ?",
+      "options": [
+        "LinkedIn",
+        "TikTok",
+        "Pinterest",
+        "Reddit"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'VPN' ?",
+      "options": [
+        "Virtual Private Network",
+        "Virtual Public Network",
+        "Verified Private Network",
+        "Virtual Personal Network"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel format est couramment utilisé pour les données structurées échangées entre applications ?",
+      "options": [
+        "JSON",
+        "MP3",
+        "PNG",
+        "EXE"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le moteur de recherche Google ?",
+      "options": [
+        "Larry Page et Sergey Brin",
+        "Steve Jobs et Steve Wozniak",
+        "Bill Gates et Paul Allen",
+        "Jeff Bezos"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'HTTP' ?",
+      "options": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Protocol",
+        "HyperText Transport Process",
+        "Home Text Transfer Protocol"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logiciel est utilisé pour créer des présentations chez Microsoft ?",
+      "options": [
+        "Word",
+        "Excel",
+        "PowerPoint",
+        "Outlook"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'API' ?",
+      "options": [
+        "Application Programming Interface",
+        "Automated Program Integration",
+        "Advanced Programming Interface",
+        "Application Process Integration"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du système d'exploitation open source créé par Linus Torvalds ?",
+      "options": [
+        "Unix",
+        "Linux",
+        "Windows",
+        "BSD"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel format audio est le plus répandu pour la musique compressée ?",
+      "options": [
+        "WAV",
+        "MP3",
+        "FLAC",
+        "AIFF"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle entreprise a créé l'assistant vocal Siri ?",
+      "options": [
+        "Google",
+        "Amazon",
+        "Apple",
+        "Microsoft"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'IA' en français ?",
+      "options": [
+        "Interface Automatique",
+        "Intelligence Artificielle",
+        "Interaction Analytique",
+        "Information Automatisée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel langage est principalement utilisé pour rendre une page web interactive ?",
+      "options": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQL"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle entreprise possède WhatsApp ?",
+      "options": [
+        "Google",
+        "Meta",
+        "Microsoft",
+        "Twitter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'QR' dans 'QR code' ?",
+      "options": [
+        "Quick Read",
+        "Quick Response",
+        "Quality Recognition",
+        "Quick Recognition"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du service de stockage cloud proposé par Google ?",
+      "options": [
+        "OneDrive",
+        "iCloud",
+        "Google Drive",
+        "Dropbox"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'RGB' pour les couleurs numériques ?",
+      "options": [
+        "Red Green Blue",
+        "Rapid Graphic Balance",
+        "Real Good Brightness",
+        "Red Grey Black"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a lancé le premier iPhone en 2007 ?",
+      "options": [
+        "Samsung",
+        "Nokia",
+        "Apple",
+        "BlackBerry"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'FAQ' ?",
+      "options": [
+        "Frequently Asked Questions",
+        "Fast Answer Query",
+        "Full Access Quality",
+        "Format And Quality"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le rôle principal d'un antivirus ?",
+      "options": [
+        "Accélérer l'ordinateur",
+        "Protéger contre les logiciels malveillants",
+        "Créer des sauvegardes",
+        "Gérer les fichiers"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel réseau social est spécialisé dans les connexions professionnelles ?",
+      "options": [
+        "Instagram",
+        "LinkedIn",
+        "Snapchat",
+        "Pinterest"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle entreprise a créé le langage de programmation Java ?",
+      "options": [
+        "Microsoft",
+        "Sun Microsystems",
+        "Apple",
+        "IBM"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'GPU' ?",
+      "options": [
+        "General Processing Unit",
+        "Graphics Processing Unit",
+        "Global Power Unit",
+        "Graphic Power Utility"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du système de contrôle de version très utilisé par les développeurs ?",
+      "options": [
+        "GitHub",
+        "Git",
+        "GitLab",
+        "Toutes ces réponses évoquent le versionnage"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'SEO' ?",
+      "options": [
+        "Search Engine Optimization",
+        "Site Element Organization",
+        "Search Element Order",
+        "System Engine Operation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le réseau social Instagram avant son rachat ?",
+      "options": [
+        "Kevin Systrom et Mike Krieger",
+        "Mark Zuckerberg",
+        "Jack Dorsey",
+        "Evan Spiegel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'CMS' dans le contexte des sites web ?",
+      "options": [
+        "Content Management System",
+        "Computer Management Service",
+        "Central Media Storage",
+        "Creative Media Software"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logiciel de retouche d'image est le plus utilisé par les designers professionnels ?",
+      "options": [
+        "Paint",
+        "Photoshop",
+        "Canva",
+        "GIMP"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'DNS' ?",
+      "options": [
+        "Domain Name System",
+        "Data Network Service",
+        "Digital Name Server",
+        "Domain Network Software"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a développé le système d'exploitation Windows ?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "IBM",
+        "Google"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'SaaS' dans le monde des logiciels ?",
+      "options": [
+        "Software as a Service",
+        "System as a Software",
+        "Server as a Service",
+        "Security as a Software"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le format de fichier le plus courant pour les vidéos sur internet ?",
+      "options": [
+        "MP4",
+        "BMP",
+        "TXT",
+        "XLS"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'IoT' ?",
+      "options": [
+        "Internet of Things",
+        "Internet of Technology",
+        "Interface of Tools",
+        "Integration of Things"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réseau social a introduit le concept de story éphémère de 24h ?",
+      "options": [
+        "Facebook",
+        "Snapchat",
+        "LinkedIn",
+        "Twitter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'B2B' dans le commerce en ligne ?",
+      "options": [
+        "Business to Business",
+        "Buy to Business",
+        "Back to Base",
+        "Brand to Buyer"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise possède le moteur de recherche Bing ?",
+      "options": [
+        "Google",
+        "Microsoft",
+        "Apple",
+        "Amazon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'e-commerce' ?",
+      "options": [
+        "Commerce électronique",
+        "Commerce européen",
+        "Commerce express",
+        "Commerce évolutif"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de fichier utilise l'extension '.docx' ?",
+      "options": [
+        "Feuille de calcul",
+        "Document texte",
+        "Présentation",
+        "Image"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'CTA' en marketing digital ?",
+      "options": [
+        "Call To Action",
+        "Click To Access",
+        "Content Text Ad",
+        "Central Traffic Analysis"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logiciel de la suite Adobe sert à créer des animations et illustrations vectorielles ?",
+      "options": [
+        "Photoshop",
+        "Illustrator",
+        "Premiere Pro",
+        "InDesign"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'KPI' ?",
+      "options": [
+        "Key Performance Indicator",
+        "Key Process Index",
+        "Known Performance Index",
+        "Key Product Information"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le service de streaming Netflix ?",
+      "options": [
+        "Reed Hastings et Marc Randolph",
+        "Steve Jobs",
+        "Elon Musk",
+        "Jeff Bezos"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'FTP' ?",
+      "options": [
+        "File Transfer Protocol",
+        "Fast Text Process",
+        "File Type Protocol",
+        "Fixed Transfer Process"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logiciel Adobe est spécialisé dans le montage vidéo ?",
+      "options": [
+        "Photoshop",
+        "Premiere Pro",
+        "Illustrator",
+        "XD"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'UX' en design ?",
+      "options": [
+        "User Experience",
+        "Universal Xtension",
+        "User Xchange",
+        "Unique Experience"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a lancé le service de messagerie Gmail ?",
+      "options": [
+        "Microsoft",
+        "Yahoo",
+        "Google",
+        "Apple"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'UI' en design d'application ?",
+      "options": [
+        "User Interface",
+        "Universal Interface",
+        "Unique Identity",
+        "User Identity"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel format d'image est idéal pour les logos avec transparence ?",
+      "options": [
+        "JPEG",
+        "PNG",
+        "BMP",
+        "TIFF"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'CRM' ?",
+      "options": [
+        "Customer Relationship Management",
+        "Central Resource Manager",
+        "Client Resource Module",
+        "Customer Record Management"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle plateforme est spécialisée dans le hosting de vidéos et appartient à Google ?",
+      "options": [
+        "Vimeo",
+        "Dailymotion",
+        "YouTube",
+        "TikTok"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Que signifie 'ROI' dans le monde des affaires numériques ?",
+      "options": [
+        "Return On Investment",
+        "Rate Of Interest",
+        "Result Of Impact",
+        "Return Of Income"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel type de logiciel Canva permet de créer facilement ?",
+      "options": [
+        "Des bases de données",
+        "Des designs graphiques",
+        "Des systèmes d'exploitation",
+        "Des jeux vidéo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'DIY' souvent utilisé sur les tutoriels en ligne ?",
+      "options": [
+        "Do It Yourself",
+        "Design It Yourself",
+        "Data In Yield",
+        "Digital Interface Yes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel service de Google permet de créer des formulaires en ligne ?",
+      "options": [
+        "Google Docs",
+        "Google Forms",
+        "Google Sheets",
+        "Google Slides"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'WYSIWYG' pour les éditeurs de contenu ?",
+      "options": [
+        "What You See Is What You Get",
+        "Why You Search Is What You Get",
+        "What You Save Is What You Give",
+        "What You Send Is What You Grab"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le réseau social TikTok ?",
+      "options": [
+        "Tencent",
+        "ByteDance",
+        "Alibaba",
+        "Baidu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'CDN' ?",
+      "options": [
+        "Content Delivery Network",
+        "Central Data Network",
+        "Content Data Node",
+        "Core Delivery Node"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel logiciel gratuit et open source est une alternative à Photoshop ?",
+      "options": [
+        "GIMP",
+        "Sketch",
+        "Figma",
+        "Canva Pro"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Que signifie 'SSL' pour la sécurité des sites web ?",
+      "options": [
+        "Secure Sockets Layer",
+        "System Security Level",
+        "Safe Site Link",
+        "Secure Server Login"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle entreprise a créé le logiciel de conception Figma ?",
+      "options": [
+        "Adobe",
+        "Figma Inc.",
+        "Google",
+        "Microsoft"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Que signifie 'MVP' dans le développement de produit ?",
+      "options": [
+        "Minimum Viable Product",
+        "Most Valuable Player",
+        "Maximum Value Product",
+        "Multi Version Prototype"
+      ],
+      "correct": 0
+    }
   ],
-  histoire: [
-    {q:"En quelle année a eu lieu la chute du mur de Berlin ?", options:["1987","1989","1991","1993"], correct:1},
-    {q:"Qui était le premier président des États-Unis ?", options:["Abraham Lincoln","Thomas Jefferson","George Washington","John Adams"], correct:2},
-    {q:"En quelle année a débuté la Première Guerre mondiale ?", options:["1912","1914","1916","1918"], correct:1},
-    {q:"Quel empire a construit le Colisée de Rome ?", options:["L'empire grec","L'empire romain","L'empire byzantin","L'empire perse"], correct:1},
-    {q:"Quel pharaon est associé à la grande pyramide de Gizeh ?", options:["Toutânkhamon","Khéops","Ramsès II","Akhenaton"], correct:1},
+  "histoire": [
+    {
+      "q": "En quelle année a eu lieu la chute du mur de Berlin ?",
+      "options": [
+        "1987",
+        "1989",
+        "1991",
+        "1993"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui était le premier président des États-Unis ?",
+      "options": [
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "George Washington",
+        "John Adams"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année a débuté la Première Guerre mondiale ?",
+      "options": [
+        "1912",
+        "1914",
+        "1916",
+        "1918"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empire a construit le Colisée de Rome ?",
+      "options": [
+        "L'empire grec",
+        "L'empire romain",
+        "L'empire byzantin",
+        "L'empire perse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pharaon est associé à la grande pyramide de Gizeh ?",
+      "options": [
+        "Toutânkhamon",
+        "Khéops",
+        "Ramsès II",
+        "Akhenaton"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a pris fin la Seconde Guerre mondiale ?",
+      "options": [
+        "1943",
+        "1944",
+        "1945",
+        "1946"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a écrit la Déclaration d'indépendance des États-Unis ?",
+      "options": [
+        "George Washington",
+        "Thomas Jefferson",
+        "Benjamin Franklin",
+        "John Adams"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu la Révolution française ?",
+      "options": [
+        "1769",
+        "1789",
+        "1799",
+        "1804"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi de France est surnommé le 'Roi Soleil' ?",
+      "options": [
+        "Louis XIV",
+        "Louis XV",
+        "Louis XVI",
+        "Henri IV"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a construit la Grande Muraille pour se protéger des invasions ?",
+      "options": [
+        "Japon",
+        "Corée",
+        "Chine",
+        "Mongolie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a été le premier homme à marcher sur la Lune ?",
+      "options": [
+        "Buzz Aldrin",
+        "Youri Gagarine",
+        "Neil Armstrong",
+        "John Glenn"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année l'esclavage a-t-il été aboli en France ?",
+      "options": [
+        "1815",
+        "1848",
+        "1870",
+        "1900"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empereur français a été exilé sur l'île de Sainte-Hélène ?",
+      "options": [
+        "Louis XVI",
+        "Napoléon Bonaparte",
+        "Napoléon III",
+        "Charles X"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle civilisation a construit Machu Picchu ?",
+      "options": [
+        "Aztèque",
+        "Maya",
+        "Inca",
+        "Olmèque"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année l'indépendance de la Côte d'Ivoire a-t-elle été proclamée ?",
+      "options": [
+        "1958",
+        "1960",
+        "1962",
+        "1965"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui était le leader du mouvement pour les droits civiques aux États-Unis assassiné en 1968 ?",
+      "options": [
+        "Malcolm X",
+        "Martin Luther King Jr.",
+        "Nelson Mandela",
+        "Rosa Parks"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel traité a mis fin à la Première Guerre mondiale ?",
+      "options": [
+        "Traité de Versailles",
+        "Traité de Paris",
+        "Traité de Vienne",
+        "Traité de Rome"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a découvert l'Amérique en 1492 ?",
+      "options": [
+        "Vasco de Gama",
+        "Christophe Colomb",
+        "Magellan",
+        "Marco Polo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a été le premier à envoyer un satellite artificiel dans l'espace ?",
+      "options": [
+        "États-Unis",
+        "France",
+        "URSS",
+        "Chine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle reine d'Égypte est célèbre pour sa relation avec Jules César et Marc Antoine ?",
+      "options": [
+        "Néfertiti",
+        "Cléopâtre",
+        "Hatchepsout",
+        "Isis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu l'indépendance de l'Inde ?",
+      "options": [
+        "1945",
+        "1947",
+        "1950",
+        "1952"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dirigeant a présidé l'Afrique du Sud après la fin de l'apartheid ?",
+      "options": [
+        "Thabo Mbeki",
+        "Nelson Mandela",
+        "Jacob Zuma",
+        "F.W. de Klerk"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+      "options": [
+        "Guerre d'indépendance",
+        "Guerre de Sécession",
+        "Guerre hispano-américaine",
+        "Guerre de 1812"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel explorateur portugais a été le premier à atteindre l'Inde par voie maritime ?",
+      "options": [
+        "Vasco de Gama",
+        "Magellan",
+        "Christophe Colomb",
+        "Bartolomeu Dias"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année le mur de Berlin a-t-il été érigé ?",
+      "options": [
+        "1955",
+        "1961",
+        "1968",
+        "1975"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empire dirigeait une grande partie de l'Europe sous Charlemagne ?",
+      "options": [
+        "Empire romain",
+        "Empire byzantin",
+        "Empire carolingien",
+        "Empire ottoman"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle bataille a marqué la défaite finale de Napoléon en 1815 ?",
+      "options": [
+        "Austerlitz",
+        "Waterloo",
+        "Iéna",
+        "Trafalgar"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a été le premier empereur de Rome ?",
+      "options": [
+        "Jules César",
+        "Auguste",
+        "Néron",
+        "Trajan"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a été colonisé et appelé 'Congo belge' ?",
+      "options": [
+        "République démocratique du Congo",
+        "Congo-Brazzaville",
+        "Rwanda",
+        "Burundi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année a eu lieu l'attentat du 11 septembre aux États-Unis ?",
+      "options": [
+        "1999",
+        "2001",
+        "2003",
+        "2005"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel philosophe grec fut le maître d'Alexandre le Grand ?",
+      "options": [
+        "Socrate",
+        "Platon",
+        "Aristote",
+        "Pythagore"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle civilisation antique a bâti les pyramides de Gizeh ?",
+      "options": [
+        "Mésopotamienne",
+        "Égyptienne",
+        "Grecque",
+        "Romaine"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel royaume africain était réputé pour son commerce d'or au Moyen Âge ?",
+      "options": [
+        "Royaume du Bénin",
+        "Empire du Mali",
+        "Royaume Zoulou",
+        "Royaume Kongo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a été le premier président de la Côte d'Ivoire indépendante ?",
+      "options": [
+        "Laurent Gbagbo",
+        "Félix Houphouët-Boigny",
+        "Henri Konan Bédié",
+        "Alassane Ouattara"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle épidémie a décimé l'Europe au 14e siècle ?",
+      "options": [
+        "Le choléra",
+        "La grippe espagnole",
+        "La peste noire",
+        "La variole"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel événement a déclenché la Seconde Guerre mondiale en Europe ?",
+      "options": [
+        "L'invasion de la Pologne",
+        "L'attaque de Pearl Harbor",
+        "La crise de 1929",
+        "Le traité de Versailles"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle dynastie chinoise a construit une grande partie de la Grande Muraille actuelle ?",
+      "options": [
+        "Dynastie Han",
+        "Dynastie Ming",
+        "Dynastie Tang",
+        "Dynastie Qin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays européen a colonisé le Brésil ?",
+      "options": [
+        "Espagne",
+        "France",
+        "Portugal",
+        "Angleterre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a dirigé la résistance indienne pacifique contre la domination britannique ?",
+      "options": [
+        "Jawaharlal Nehru",
+        "Mahatma Gandhi",
+        "Indira Gandhi",
+        "Subhas Chandra Bose"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu la conférence de Berlin sur le partage de l'Afrique ?",
+      "options": [
+        "1875",
+        "1884",
+        "1895",
+        "1900"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel royaume africain médiéval était centré autour de la ville de Tombouctou ?",
+      "options": [
+        "Empire du Ghana",
+        "Empire du Mali",
+        "Empire Songhaï",
+        "Royaume du Bénin"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empereur romain a légalisé le christianisme dans l'Empire romain ?",
+      "options": [
+        "Néron",
+        "Constantin",
+        "Auguste",
+        "Caligula"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu la conférence de Bandung marquant le mouvement des non-alignés ?",
+      "options": [
+        "1945",
+        "1955",
+        "1960",
+        "1965"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pharaon égyptien a régné le plus longtemps ?",
+      "options": [
+        "Ramsès II",
+        "Khéops",
+        "Toutânkhamon",
+        "Akhenaton"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ville était la capitale de l'Empire byzantin ?",
+      "options": [
+        "Rome",
+        "Athènes",
+        "Constantinople",
+        "Alexandrie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "En quelle année a eu lieu la crise économique mondiale connue comme le 'Krach de 1929' ?",
+      "options": [
+        "1925",
+        "1929",
+        "1933",
+        "1939"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dirigeant africain a mené la lutte pour l'indépendance du Ghana en 1957 ?",
+      "options": [
+        "Julius Nyerere",
+        "Kwame Nkrumah",
+        "Jomo Kenyatta",
+        "Léopold Sédar Senghor"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle guerre a opposé la France et l'Algérie de 1954 à 1962 ?",
+      "options": [
+        "Guerre du Rif",
+        "Guerre d'Algérie",
+        "Guerre de Suez",
+        "Guerre du Sahara"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel poète et homme d'État a été le premier président du Sénégal indépendant ?",
+      "options": [
+        "Modibo Keïta",
+        "Léopold Sédar Senghor",
+        "Ahmed Sékou Touré",
+        "Félix Houphouët-Boigny"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a été fondée l'Organisation des Nations Unies (ONU) ?",
+      "options": [
+        "1919",
+        "1945",
+        "1948",
+        "1950"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel royaume précolonial était situé dans l'actuel Bénin, réputé pour son art ?",
+      "options": [
+        "Royaume du Bénin (Édo)",
+        "Royaume Ashanti",
+        "Royaume Kongo",
+        "Royaume Zoulou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle bataille en 1898 a marqué l'affrontement franco-britannique pour le contrôle du Soudan ?",
+      "options": [
+        "Bataille de Fachoda",
+        "Bataille d'Omdurman",
+        "Bataille de Khartoum",
+        "Bataille du Caire"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dirigeant guinéen a répondu 'non' au référendum de 1958 proposé par de Gaulle ?",
+      "options": [
+        "Ahmed Sékou Touré",
+        "Modibo Keïta",
+        "Sylvanus Olympio",
+        "Félix Houphouët-Boigny"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année la traite négrière transatlantique a-t-elle été officiellement abolie par la France ?",
+      "options": [
+        "1794",
+        "1815",
+        "1848",
+        "1865"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel explorateur a mené la première circumnavigation du globe (expédition achevée après sa mort) ?",
+      "options": [
+        "Christophe Colomb",
+        "Vasco de Gama",
+        "Magellan",
+        "James Cook"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle guerre a opposé l'Éthiopie à l'Italie fasciste dans les années 1930 ?",
+      "options": [
+        "Guerre italo-éthiopienne",
+        "Guerre du Sahara occidental",
+        "Guerre du Biafra",
+        "Guerre des Boers"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel dirigeant a mené le Congo (Léopoldville) à l'indépendance en 1960 ?",
+      "options": [
+        "Mobutu Sese Seko",
+        "Patrice Lumumba",
+        "Joseph Kasa-Vubu",
+        "Moïse Tshombe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu le génocide au Rwanda ?",
+      "options": [
+        "1990",
+        "1994",
+        "1998",
+        "2000"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle dynastie a régné sur l'Égypte antique le plus longtemps parmi les grandes périodes ?",
+      "options": [
+        "Ancien Empire",
+        "Moyen Empire",
+        "Nouvel Empire",
+        "Période ptolémaïque"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel accord a mis fin à la Première Guerre mondiale en imposant des réparations à l'Allemagne ?",
+      "options": [
+        "Traité de Versailles",
+        "Traité de Locarno",
+        "Traité de Munich",
+        "Traité de Brest-Litovsk"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel royaume précolonial dominait la région du Ghana actuel, réputé pour son trône en or ?",
+      "options": [
+        "Royaume Ashanti",
+        "Royaume du Bénin",
+        "Royaume Kongo",
+        "Royaume Zoulou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année les Jeux Olympiques modernes ont-ils été fondés ?",
+      "options": [
+        "1886",
+        "1896",
+        "1900",
+        "1908"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi zoulou a fondé un puissant royaume en Afrique australe au 19e siècle ?",
+      "options": [
+        "Chaka Zoulou",
+        "Moshoeshoe",
+        "Lobengula",
+        "Cetshwayo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle crise a opposé les États-Unis et l'URSS autour de missiles nucléaires en 1962 ?",
+      "options": [
+        "Crise de Berlin",
+        "Crise des missiles de Cuba",
+        "Crise de Suez",
+        "Guerre de Corée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel dirigeant a proclamé l'indépendance du Ghana en 1957, premier pays d'Afrique subsaharienne à devenir indépendant ?",
+      "options": [
+        "Julius Nyerere",
+        "Kwame Nkrumah",
+        "Nnamdi Azikiwe",
+        "Léopold Sédar Senghor"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle famille royale française a régné juste avant la Révolution de 1789 ?",
+      "options": [
+        "Les Bourbons",
+        "Les Valois",
+        "Les Capétiens",
+        "Les Orléans"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année a débuté la colonisation de l'Afrique lors de la Conférence de Berlin ?",
+      "options": [
+        "1875",
+        "1884",
+        "1890",
+        "1900"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi anglais a rompu avec l'Église catholique pour fonder l'Église anglicane ?",
+      "options": [
+        "Henri VII",
+        "Henri VIII",
+        "Édouard VI",
+        "Jacques Ier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel empire précolonial couvrait une grande partie de l'actuelle Côte d'Ivoire et du Ghana, fondé par Samory Touré ?",
+      "options": [
+        "Empire Toucouleur",
+        "Empire Samorien (Wassoulou)",
+        "Empire du Mali",
+        "Royaume Ashanti"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu la première guerre du Golfe ?",
+      "options": [
+        "1989",
+        "1991",
+        "1995",
+        "2001"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel explorateur français a mené des expéditions dans le bassin du Congo au 19e siècle et fonda Brazzaville ?",
+      "options": [
+        "Pierre Savorgnan de Brazza",
+        "René Caillié",
+        "Gustave Binger",
+        "Louis Faidherbe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle organisation panafricaine a été fondée en 1963, précurseur de l'Union africaine ?",
+      "options": [
+        "OUA (Organisation de l'Unité Africaine)",
+        "CEDEAO",
+        "UA directement",
+        "SADC"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel roi de France a fait construire le château de Versailles ?",
+      "options": [
+        "Louis XIII",
+        "Louis XIV",
+        "Louis XV",
+        "François Ier"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année a eu lieu la Marche sur Washington où Martin Luther King a prononcé son discours 'I Have a Dream' ?",
+      "options": [
+        "1955",
+        "1963",
+        "1965",
+        "1968"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel roi kongo a régné et entretenu des relations diplomatiques avec le Portugal au 16e siècle ?",
+      "options": [
+        "Afonso Ier",
+        "Nzinga Mbemba",
+        "Les deux réponses désignent la même personne",
+        "António Ier"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle guerre a opposé le Nigeria à la région sécessionniste du Biafra (1967-1970) ?",
+      "options": [
+        "Guerre du Biafra",
+        "Guerre du Cameroun",
+        "Guerre du Congo",
+        "Guerre du Ghana"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "En quelle année Nelson Mandela a-t-il été libéré de prison après 27 ans ?",
+      "options": [
+        "1985",
+        "1990",
+        "1994",
+        "1999"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel explorateur écossais a exploré le cours du fleuve Niger et le lac Malawi au 19e siècle ?",
+      "options": [
+        "David Livingstone",
+        "Henry Morton Stanley",
+        "Mungo Park",
+        "Richard Burton"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle bataille a marqué la victoire éthiopienne contre l'Italie en 1896, préservant son indépendance ?",
+      "options": [
+        "Bataille d'Adoua",
+        "Bataille d'Axoum",
+        "Bataille de Gondar",
+        "Bataille de Harar"
+      ],
+      "correct": 0
+    }
   ],
-  sciences: [
-    {q:"Quelle est la planète la plus proche du Soleil ?", options:["Vénus","Mercure","Mars","Terre"], correct:1},
-    {q:"Quel gaz les plantes absorbent-elles principalement lors de la photosynthèse ?", options:["Oxygène","Azote","Dioxyde de carbone","Hydrogène"], correct:2},
-    {q:"Combien d'os compte le corps humain adulte ?", options:["186","206","226","246"], correct:1},
-    {q:"Quelle est l'unité de mesure de la force ?", options:["Le watt","Le joule","Le newton","Le volt"], correct:2},
-    {q:"Quel est l'élément chimique dont le symbole est 'O' ?", options:["Or","Oxygène","Osmium","Oganesson"], correct:1},
+  "sciences": [
+    {
+      "q": "Quelle est la planète la plus proche du Soleil ?",
+      "options": [
+        "Vénus",
+        "Mercure",
+        "Mars",
+        "Terre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel gaz les plantes absorbent-elles principalement lors de la photosynthèse ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Hydrogène"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien d'os compte le corps humain adulte ?",
+      "options": [
+        "186",
+        "206",
+        "226",
+        "246"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la force ?",
+      "options": [
+        "Le watt",
+        "Le joule",
+        "Le newton",
+        "Le volt"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'élément chimique dont le symbole est 'O' ?",
+      "options": [
+        "Or",
+        "Oxygène",
+        "Osmium",
+        "Oganesson"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle planète est surnommée la 'planète rouge' ?",
+      "options": [
+        "Vénus",
+        "Mars",
+        "Jupiter",
+        "Saturne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel organe pompe le sang dans le corps humain ?",
+      "options": [
+        "Le foie",
+        "Le cœur",
+        "Les poumons",
+        "Les reins"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le symbole chimique de l'or ?",
+      "options": [
+        "Ag",
+        "Au",
+        "Gd",
+        "Or"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la vitesse de la lumière dans le vide (approximativement) ?",
+      "options": [
+        "300 000 km/s",
+        "150 000 km/s",
+        "3 000 km/s",
+        "30 000 km/s"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel scientifique a formulé la théorie de la relativité ?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Niels Bohr",
+        "Galilée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande planète du système solaire ?",
+      "options": [
+        "Saturne",
+        "Neptune",
+        "Jupiter",
+        "Uranus"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel gaz est le plus abondant dans l'atmosphère terrestre ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Hydrogène"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de chromosomes possède une cellule humaine normale ?",
+      "options": [
+        "23",
+        "44",
+        "46",
+        "48"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est l'organe responsable de la filtration du sang chez l'humain ?",
+      "options": [
+        "Le foie",
+        "Les reins",
+        "La rate",
+        "Le pancréas"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la température dans le système international ?",
+      "options": [
+        "Fahrenheit",
+        "Celsius",
+        "Kelvin",
+        "Rankine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel scientifique a découvert la loi de la gravitation universelle ?",
+      "options": [
+        "Galilée",
+        "Isaac Newton",
+        "Albert Einstein",
+        "Kepler"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la formule chimique de l'eau ?",
+      "options": [
+        "CO2",
+        "H2O",
+        "O2",
+        "NaCl"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le processus par lequel les plantes produisent leur énergie ?",
+      "options": [
+        "La respiration",
+        "La photosynthèse",
+        "La fermentation",
+        "L'osmose"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de dents possède un adulte humain en moyenne ?",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle planète possède les anneaux les plus visibles du système solaire ?",
+      "options": [
+        "Jupiter",
+        "Saturne",
+        "Uranus",
+        "Neptune"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du processus de transformation d'un liquide en gaz ?",
+      "options": [
+        "Condensation",
+        "Évaporation",
+        "Sublimation",
+        "Solidification"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel organe humain est responsable de la production d'insuline ?",
+      "options": [
+        "Le foie",
+        "Le pancréas",
+        "La rate",
+        "Les reins"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de l'énergie ?",
+      "options": [
+        "Le newton",
+        "Le joule",
+        "Le watt",
+        "L'ampère"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le plus grand organe du corps humain ?",
+      "options": [
+        "Le foie",
+        "Le cerveau",
+        "La peau",
+        "Les poumons"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel gaz les êtres humains expirent-ils principalement ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Hydrogène"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la plus petite unité de vie ?",
+      "options": [
+        "L'atome",
+        "La molécule",
+        "La cellule",
+        "Le tissu"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel scientifique a développé la théorie de l'évolution par sélection naturelle ?",
+      "options": [
+        "Gregor Mendel",
+        "Charles Darwin",
+        "Louis Pasteur",
+        "Carl Linné"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la pression atmosphérique ?",
+      "options": [
+        "Le pascal",
+        "Le newton",
+        "Le joule",
+        "L'ampère"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel métal est liquide à température ambiante ?",
+      "options": [
+        "Le fer",
+        "Le mercure",
+        "L'aluminium",
+        "Le cuivre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la principale source d'énergie de la Terre ?",
+      "options": [
+        "Le vent",
+        "Le Soleil",
+        "La Lune",
+        "Les océans"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la galaxie dans laquelle se trouve notre système solaire ?",
+      "options": [
+        "Andromède",
+        "Voie lactée",
+        "Tourbillon",
+        "Sombrero"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de litres de sang un cœur humain pompe-t-il environ par jour ?",
+      "options": [
+        "1000 litres",
+        "5000 litres",
+        "7500 litres",
+        "10000 litres"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel type de roche se forme à partir du refroidissement du magma ?",
+      "options": [
+        "Roche sédimentaire",
+        "Roche métamorphique",
+        "Roche volcanique",
+        "Roche calcaire"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle vitamine est principalement produite par exposition au soleil ?",
+      "options": [
+        "Vitamine A",
+        "Vitamine C",
+        "Vitamine D",
+        "Vitamine K"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du satellite naturel de la Terre ?",
+      "options": [
+        "Titan",
+        "Europe",
+        "La Lune",
+        "Phobos"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle partie du cerveau est responsable de l'équilibre ?",
+      "options": [
+        "Le cervelet",
+        "Le cortex",
+        "L'hippocampe",
+        "L'hypothalamus"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est l'état de la matière du gaz naturel dans des conditions normales ?",
+      "options": [
+        "Solide",
+        "Liquide",
+        "Gazeux",
+        "Plasma"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle planète du système solaire est connue pour sa Grande Tache Rouge ?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Saturne",
+        "Neptune"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le processus par lequel une graine devient une plante ?",
+      "options": [
+        "La pollinisation",
+        "La germination",
+        "La photosynthèse",
+        "La respiration"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure du courant électrique ?",
+      "options": [
+        "Le volt",
+        "L'ampère",
+        "L'ohm",
+        "Le watt"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du processus par lequel les cellules se divisent pour la croissance ?",
+      "options": [
+        "La méiose",
+        "La mitose",
+        "La mutation",
+        "La fusion"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la fréquence ?",
+      "options": [
+        "Le hertz",
+        "Le watt",
+        "Le volt",
+        "L'ampère"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le gaz responsable de l'effet de serre le plus connu ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Hélium"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle planète est la plus proche de la Terre en distance moyenne ?",
+      "options": [
+        "Mars",
+        "Vénus",
+        "Mercure",
+        "Jupiter"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la force qui attire les objets vers le centre de la Terre ?",
+      "options": [
+        "Le magnétisme",
+        "La gravité",
+        "La friction",
+        "L'inertie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle partie de la plante réalise la photosynthèse ?",
+      "options": [
+        "La racine",
+        "La tige",
+        "La feuille",
+        "La fleur"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le symbole chimique du fer ?",
+      "options": [
+        "Fe",
+        "Fr",
+        "F",
+        "Ir"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la masse dans le système international ?",
+      "options": [
+        "Le gramme",
+        "Le kilogramme",
+        "La livre",
+        "Le newton"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel organe humain est responsable de la respiration ?",
+      "options": [
+        "Le cœur",
+        "Les poumons",
+        "Le foie",
+        "L'estomac"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom scientifique de l'étude des étoiles et de l'univers ?",
+      "options": [
+        "La géologie",
+        "L'astronomie",
+        "La biologie",
+        "La météorologie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la première loi du mouvement de Newton ?",
+      "options": [
+        "La loi de l'inertie",
+        "La loi de la gravitation",
+        "La loi de l'action-réaction",
+        "La loi de la conservation"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le principal composant de l'air que nous respirons ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Argon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure du volume liquide couramment utilisée ?",
+      "options": [
+        "Le litre",
+        "Le gramme",
+        "Le mètre",
+        "Le kelvin"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du processus par lequel l'eau passe de l'état liquide à l'état solide ?",
+      "options": [
+        "Fusion",
+        "Solidification",
+        "Évaporation",
+        "Sublimation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel type d'animal est un dauphin ?",
+      "options": [
+        "Un poisson",
+        "Un mammifère",
+        "Un reptile",
+        "Un amphibien"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la longueur d'onde ?",
+      "options": [
+        "Le hertz",
+        "Le mètre",
+        "Le watt",
+        "Le joule"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le rôle principal des globules rouges dans le sang ?",
+      "options": [
+        "Combattre les infections",
+        "Transporter l'oxygène",
+        "Coaguler le sang",
+        "Digérer les aliments"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle planète du système solaire n'a pas de lune connue ?",
+      "options": [
+        "Mars",
+        "Vénus",
+        "Jupiter",
+        "Saturne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la couche protectrice de l'atmosphère qui filtre les rayons UV ?",
+      "options": [
+        "La troposphère",
+        "La couche d'ozone",
+        "La stratosphère basse",
+        "L'ionosphère"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est l'organe qui contrôle le système nerveux central ?",
+      "options": [
+        "Le cœur",
+        "Le cerveau",
+        "Le foie",
+        "Les poumons"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la résistance électrique ?",
+      "options": [
+        "L'ohm",
+        "Le volt",
+        "L'ampère",
+        "Le watt"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel scientifique a découvert la pénicilline ?",
+      "options": [
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Marie Curie",
+        "Robert Koch"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le processus par lequel les animaux transforment la nourriture en énergie ?",
+      "options": [
+        "La photosynthèse",
+        "La respiration cellulaire",
+        "La fermentation",
+        "L'osmose"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus petite particule d'un élément chimique conservant ses propriétés ?",
+      "options": [
+        "La molécule",
+        "L'atome",
+        "L'électron",
+        "Le neutron"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du champ magnétique qui protège la Terre du vent solaire ?",
+      "options": [
+        "La magnétosphère",
+        "L'ionosphère",
+        "La stratosphère",
+        "L'exosphère"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est l'unité de mesure du travail et de l'énergie mécanique ?",
+      "options": [
+        "Le joule",
+        "Le newton",
+        "Le watt",
+        "Le pascal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le principal organe de l'appareil digestif où débute la digestion des aliments ?",
+      "options": [
+        "L'estomac",
+        "La bouche",
+        "L'intestin grêle",
+        "Le foie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'étoile la plus proche de la Terre après le Soleil ?",
+      "options": [
+        "Sirius",
+        "Proxima du Centaure",
+        "Alpha du Centaure",
+        "Bételgeuse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la théorie expliquant l'origine et l'expansion de l'univers ?",
+      "options": [
+        "La théorie de la relativité",
+        "Le Big Bang",
+        "La théorie des cordes",
+        "La théorie quantique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle vitamine prévient le scorbut et se trouve dans les agrumes ?",
+      "options": [
+        "Vitamine A",
+        "Vitamine B",
+        "Vitamine C",
+        "Vitamine E"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du processus par lequel une chenille devient un papillon ?",
+      "options": [
+        "La mue",
+        "La métamorphose",
+        "La mitose",
+        "La pollinisation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est l'unité de mesure de la puissance électrique ?",
+      "options": [
+        "Le watt",
+        "Le volt",
+        "L'ampère",
+        "L'ohm"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le plus grand mammifère du monde ?",
+      "options": [
+        "L'éléphant d'Afrique",
+        "La baleine bleue",
+        "Le rhinocéros",
+        "La girafe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la fonction principale des racines d'une plante ?",
+      "options": [
+        "La photosynthèse",
+        "L'absorption d'eau et de nutriments",
+        "La reproduction",
+        "La respiration"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du gaz utilisé par les plantes et rejeté par les animaux via la respiration ?",
+      "options": [
+        "Oxygène",
+        "Azote",
+        "Dioxyde de carbone",
+        "Hydrogène"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est l'unité de mesure du temps dans le système international ?",
+      "options": [
+        "La minute",
+        "La seconde",
+        "L'heure",
+        "Le jour"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel scientifique est connu pour ses travaux sur la radioactivité et a reçu deux prix Nobel ?",
+      "options": [
+        "Albert Einstein",
+        "Marie Curie",
+        "Isaac Newton",
+        "Niels Bohr"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de l'os le plus long du corps humain ?",
+      "options": [
+        "Le tibia",
+        "Le fémur",
+        "L'humérus",
+        "Le radius"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la différence principale entre un animal à sang chaud et un animal à sang froid ?",
+      "options": [
+        "La taille",
+        "La régulation de la température corporelle",
+        "Le nombre de pattes",
+        "Le mode de reproduction"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du phénomène qui provoque les marées sur Terre ?",
+      "options": [
+        "La rotation terrestre",
+        "L'attraction gravitationnelle de la Lune",
+        "Les courants marins",
+        "Le vent"
+      ],
+      "correct": 1
+    }
   ],
-  sport: [
-    {q:"Tous les combien d'années ont lieu les Jeux Olympiques d'été ?", options:["2 ans","3 ans","4 ans","5 ans"], correct:2},
-    {q:"Combien de joueurs compte une équipe de football sur le terrain ?", options:["9","10","11","12"], correct:2},
-    {q:"Dans quel sport utilise-t-on le terme 'ace' ?", options:["Golf","Tennis","Basketball","Rugby"], correct:1},
-    {q:"Quel pays a remporté la Coupe du Monde de football 2022 ?", options:["France","Brésil","Argentine","Croatie"], correct:2},
-    {q:"Combien de temps dure un match de basketball (NBA), hors prolongations ?", options:["40 minutes","48 minutes","60 minutes","90 minutes"], correct:1},
+  "sport": [
+    {
+      "q": "Tous les combien d'années ont lieu les Jeux Olympiques d'été ?",
+      "options": [
+        "2 ans",
+        "3 ans",
+        "4 ans",
+        "5 ans"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de football sur le terrain ?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport utilise-t-on le terme 'ace' ?",
+      "options": [
+        "Golf",
+        "Tennis",
+        "Basketball",
+        "Rugby"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté la Coupe du Monde de football 2022 ?",
+      "options": [
+        "France",
+        "Brésil",
+        "Argentine",
+        "Croatie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de temps dure un match de basketball (NBA), hors prolongations ?",
+      "options": [
+        "40 minutes",
+        "48 minutes",
+        "60 minutes",
+        "90 minutes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de basketball sur le terrain ?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a inventé le football moderne ?",
+      "options": [
+        "France",
+        "Brésil",
+        "Angleterre",
+        "Espagne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de sets faut-il gagner pour remporter un match de tennis en Grand Chelem masculin ?",
+      "options": [
+        "2 sets",
+        "3 sets",
+        "4 sets",
+        "5 sets"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le sport national du Japon ?",
+      "options": [
+        "Karaté",
+        "Sumo",
+        "Judo",
+        "Kendo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de volleyball sur le terrain ?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel athlète est surnommé 'l'Éclair' pour ses records au sprint ?",
+      "options": [
+        "Carl Lewis",
+        "Usain Bolt",
+        "Justin Gatlin",
+        "Tyson Gay"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel sport pratique-t-on le 'smash' ?",
+      "options": [
+        "Football",
+        "Badminton",
+        "Rugby",
+        "Natation"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté le plus de Coupes du Monde de football ?",
+      "options": [
+        "Allemagne",
+        "Argentine",
+        "Italie",
+        "Brésil"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de rugby à XV sur le terrain ?",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "17"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quelle discipline olympique utilise-t-on une perche ?",
+      "options": [
+        "Saut en longueur",
+        "Saut à la perche",
+        "Saut en hauteur",
+        "Triple saut"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel joueur est considéré comme l'un des meilleurs footballeurs ivoiriens de l'histoire ?",
+      "options": [
+        "Samuel Eto'o",
+        "Didier Drogba",
+        "Yaya Touré",
+        "Kolo Touré"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de points vaut un but au football ?",
+      "options": [
+        "1 point",
+        "2 points",
+        "3 points",
+        "Il ne s'agit pas de points"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel sport trouve-t-on les termes 'birdie' et 'bogey' ?",
+      "options": [
+        "Tennis",
+        "Golf",
+        "Cricket",
+        "Baseball"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a organisé la Coupe du Monde de football 2018 ?",
+      "options": [
+        "Brésil",
+        "Qatar",
+        "Russie",
+        "Allemagne"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de temps dure un match de football (hors prolongations) ?",
+      "options": [
+        "80 minutes",
+        "90 minutes",
+        "100 minutes",
+        "120 minutes"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle nage n'est pas une des quatre nages officielles en natation ?",
+      "options": [
+        "Crawl",
+        "Brasse",
+        "Papillon",
+        "Nage libre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel sport la Côte d'Ivoire a-t-elle remporté la CAN 2023 ?",
+      "options": [
+        "Basketball",
+        "Football",
+        "Handball",
+        "Athlétisme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de rounds compte généralement un combat de boxe professionnel ?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le surnom de l'équipe nationale de football de Côte d'Ivoire ?",
+      "options": [
+        "Les Lions",
+        "Les Éléphants",
+        "Les Aigles",
+        "Les Panthères"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel sport utilise-t-on un 'roquet' ou une 'raquette' selon les variantes locales ?",
+      "options": [
+        "Tennis de table",
+        "Squash",
+        "Badminton",
+        "Toutes ces réponses"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de handball sur le terrain ?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel événement sportif mondial se déroule tous les 4 ans avec des athlètes de tous les pays ?",
+      "options": [
+        "La Coupe du Monde",
+        "Les Jeux Olympiques",
+        "Le Super Bowl",
+        "Le Tour de France"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a inventé le judo ?",
+      "options": [
+        "Chine",
+        "Corée",
+        "Japon",
+        "Vietnam"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de points rapporte un panier à 3 points au basketball ?",
+      "options": [
+        "1 point",
+        "2 points",
+        "3 points",
+        "4 points"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel athlète ivoirien a été champion du monde du 400m haies ?",
+      "options": [
+        "Gabriel Tiacoh",
+        "Marie-José Ta Lou",
+        "Ben Youssef Meïté",
+        "Cyrille Bayala"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Dans quel sport se déroule le 'Tour de France' ?",
+      "options": [
+        "Course à pied",
+        "Cyclisme",
+        "Automobile",
+        "Moto"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de manches (sets) faut-il gagner pour remporter un match de volleyball ?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté la première Coupe du Monde de football en 1930 ?",
+      "options": [
+        "Brésil",
+        "Argentine",
+        "Uruguay",
+        "Italie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle athlète ivoirienne est connue pour ses performances au sprint (100m et 200m) ?",
+      "options": [
+        "Murielle Ahouré",
+        "Marie-José Ta Lou",
+        "Les deux réponses précédentes",
+        "Aucune"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport les joueurs utilisent-ils un 'club' pour frapper une balle vers un trou ?",
+      "options": [
+        "Hockey",
+        "Golf",
+        "Cricket",
+        "Baseball"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de fois l'équipe du Brésil a-t-elle remporté la Coupe du Monde de football ?",
+      "options": [
+        "3 fois",
+        "4 fois",
+        "5 fois",
+        "6 fois"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sport se pratique avec un 'palet' sur une patinoire ?",
+      "options": [
+        "Curling",
+        "Hockey sur glace",
+        "Patinage artistique",
+        "Bobsleigh"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays africain a organisé la Coupe d'Afrique des Nations 2023 (jouée en 2024) ?",
+      "options": [
+        "Cameroun",
+        "Sénégal",
+        "Côte d'Ivoire",
+        "Maroc"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport parle-t-on de 'grand chelem' pour les 4 tournois majeurs annuels ?",
+      "options": [
+        "Golf",
+        "Tennis",
+        "Les deux réponses précédentes",
+        "Basketball"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de baseball sur le terrain en défense ?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a organisé les Jeux Olympiques d'été de 2016 ?",
+      "options": [
+        "Chine",
+        "Royaume-Uni",
+        "Brésil",
+        "Japon"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de trous compte un parcours de golf standard ?",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du plus prestigieux tournoi de tennis sur gazon ?",
+      "options": [
+        "Roland-Garros",
+        "Wimbledon",
+        "US Open",
+        "Open d'Australie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté le plus de médailles d'or aux Jeux Olympiques d'été de l'histoire ?",
+      "options": [
+        "Chine",
+        "Russie",
+        "Royaume-Uni",
+        "États-Unis"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Dans quel sport le Sénégal excelle-t-il traditionnellement en Afrique de l'Ouest ?",
+      "options": [
+        "Le basketball",
+        "La lutte traditionnelle",
+        "Le rugby",
+        "Le cricket"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de cricket ?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel footballeur ivoirien a remporté le Ballon d'Or africain à plusieurs reprises ?",
+      "options": [
+        "Didier Drogba",
+        "Yaya Touré",
+        "Kolo Touré",
+        "Gervinho"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la compétition annuelle de football des clubs européens la plus prestigieuse ?",
+      "options": [
+        "Europa League",
+        "Ligue des Champions",
+        "Coupe UEFA",
+        "Supercoupe d'Europe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel sport la Côte d'Ivoire a-t-elle une forte tradition en athlétisme, notamment au sprint ?",
+      "options": [
+        "100m et 200m",
+        "Marathon",
+        "Saut en hauteur",
+        "Lancer de poids"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a inventé le basketball ?",
+      "options": [
+        "France",
+        "Canada",
+        "États-Unis",
+        "Angleterre"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Combien de temps dure une mi-temps au football ?",
+      "options": [
+        "30 minutes",
+        "40 minutes",
+        "45 minutes",
+        "50 minutes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel club de football est basé à Abidjan et est l'un des plus titrés de Côte d'Ivoire ?",
+      "options": [
+        "ASEC Mimosas",
+        "Africa Sports",
+        "Les deux réponses précédentes",
+        "Stade d'Abidjan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport pratique-t-on le 'crawl' et la 'brasse' ?",
+      "options": [
+        "Le plongeon",
+        "La natation",
+        "L'aviron",
+        "La voile"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté la Coupe d'Afrique des Nations le plus grand nombre de fois ?",
+      "options": [
+        "Cameroun",
+        "Égypte",
+        "Ghana",
+        "Nigeria"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de joueurs composent une équipe de football américain sur le terrain ?",
+      "options": [
+        "9",
+        "11",
+        "13",
+        "15"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel sport olympique utilise un arc et des flèches ?",
+      "options": [
+        "Le tir sportif",
+        "Le tir à l'arc",
+        "Le javelot",
+        "L'escrime"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel athlète ivoirien détient des records nationaux au 100m féminin ?",
+      "options": [
+        "Marie-José Ta Lou",
+        "Murielle Ahouré",
+        "Les deux athlètes ont établi des records",
+        "Aucune des deux"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport utilise-t-on les termes 'échec et mat' ?",
+      "options": [
+        "Les dames",
+        "Les échecs",
+        "Le go",
+        "Le backgammon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté la Coupe du Monde de football féminin 2023 ?",
+      "options": [
+        "États-Unis",
+        "Espagne",
+        "Angleterre",
+        "Allemagne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de médailles d'or maximum peut-on gagner en natation lors d'une seule édition des JO (record établi par un nageur) ?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sport se joue avec une raquette et un volant sur un terrain divisé par un filet ?",
+      "options": [
+        "Tennis",
+        "Badminton",
+        "Squash",
+        "Padel"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays africain a le plus de titres continentaux en football masculin (CAN) ?",
+      "options": [
+        "Cameroun",
+        "Égypte",
+        "Ghana",
+        "Côte d'Ivoire"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel sport la Côte d'Ivoire a-t-elle brillé lors des Jeux Africains en taekwondo et judo ?",
+      "options": [
+        "Sports de combat",
+        "Sports collectifs",
+        "Sports nautiques",
+        "Sports mécaniques"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du stade principal utilisé pour la CAN 2023 en Côte d'Ivoire ?",
+      "options": [
+        "Stade Félix Houphouët-Boigny (Ebimpé)",
+        "Stade de la Paix (Bouaké)",
+        "Stade Amadou Gon Coulibaly (Korhogo)",
+        "Tous ces stades ont été utilisés"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Combien de fois la France a-t-elle remporté la Coupe du Monde de football ?",
+      "options": [
+        "1 fois",
+        "2 fois",
+        "3 fois",
+        "4 fois"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel sport se pratique traditionnellement en Côte d'Ivoire avec des lutteurs, notamment dans le Nord ?",
+      "options": [
+        "La lutte traditionnelle",
+        "Le judo",
+        "La boxe",
+        "Le karaté"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a accueilli la Coupe du Monde de football 2010, première en Afrique ?",
+      "options": [
+        "Nigeria",
+        "Afrique du Sud",
+        "Égypte",
+        "Maroc"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de fois l'Argentine a-t-elle remporté la Coupe du Monde de football ?",
+      "options": [
+        "1 fois",
+        "2 fois",
+        "3 fois",
+        "4 fois"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le sport le plus populaire dans le monde en termes de spectateurs ?",
+      "options": [
+        "Le basketball",
+        "Le football",
+        "Le cricket",
+        "Le tennis"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a inventé le tennis moderne au 19e siècle ?",
+      "options": [
+        "France",
+        "Angleterre",
+        "États-Unis",
+        "Espagne"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de joueurs compte une équipe de football à 5 (futsal) ?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel nageur est l'athlète le plus médaillé de l'histoire des Jeux Olympiques ?",
+      "options": [
+        "Mark Spitz",
+        "Ian Thorpe",
+        "Michael Phelps",
+        "Ryan Lochte"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel sport de raquette se joue dans une cage fermée sur quatre murs ?",
+      "options": [
+        "Le padel",
+        "Le squash",
+        "Le badminton",
+        "Le tennis de table"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel joueur ivoirien a évolué à Manchester City et Arsenal, considéré comme l'un des meilleurs milieux africains ?",
+      "options": [
+        "Didier Zokora",
+        "Yaya Touré",
+        "Emmanuel Eboué",
+        "Salomon Kalou"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Combien de km mesure un marathon officiel ?",
+      "options": [
+        "40,195 km",
+        "42,195 km",
+        "44,195 km",
+        "38,195 km"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a remporté le plus de titres de champion du monde de Formule 1 (constructeurs) ?",
+      "options": [
+        "McLaren",
+        "Williams",
+        "Ferrari",
+        "Mercedes"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Dans quel sport la Côte d'Ivoire s'est-elle qualifiée pour les Jeux Olympiques en athlétisme féminin récemment ?",
+      "options": [
+        "Le sprint",
+        "Le marathon",
+        "Le saut en longueur",
+        "Le lancer de disque"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nombre de joueurs sur le terrain lors d'un match de water-polo par équipe ?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a organisé la première Coupe d'Afrique des Nations en 1957 ?",
+      "options": [
+        "Ghana",
+        "Égypte",
+        "Éthiopie",
+        "Soudan"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel joueur est considéré comme l'un des meilleurs footballeurs de tous les temps, souvent comparé à Cristiano Ronaldo ?",
+      "options": [
+        "Lionel Messi",
+        "Neymar",
+        "Kylian Mbappé",
+        "Zinédine Zidane"
+      ],
+      "correct": 0
+    }
   ],
-  cinema: [
-    {q:"Qui a réalisé le film 'Titanic' ?", options:["Steven Spielberg","James Cameron","Christopher Nolan","Martin Scorsese"], correct:1},
-    {q:"Quel studio a produit 'Le Roi Lion' (1994) ?", options:["Pixar","DreamWorks","Disney","Universal"], correct:2},
-    {q:"Quel artiste a chanté 'Thriller' ?", options:["Prince","Michael Jackson","Stevie Wonder","James Brown"], correct:1},
-    {q:"Dans quel film trouve-t-on le personnage de Jack Sparrow ?", options:["Pirates des Caraïbes","Le Seigneur des Anneaux","Indiana Jones","James Bond"], correct:0},
+  "cinema": [
+    {
+      "q": "Qui a réalisé le film 'Titanic' ?",
+      "options": [
+        "Steven Spielberg",
+        "James Cameron",
+        "Christopher Nolan",
+        "Martin Scorsese"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel studio a produit 'Le Roi Lion' (1994) ?",
+      "options": [
+        "Pixar",
+        "DreamWorks",
+        "Disney",
+        "Universal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste a chanté 'Thriller' ?",
+      "options": [
+        "Prince",
+        "Michael Jackson",
+        "Stevie Wonder",
+        "James Brown"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Dans quel film trouve-t-on le personnage de Jack Sparrow ?",
+      "options": [
+        "Pirates des Caraïbes",
+        "Le Seigneur des Anneaux",
+        "Indiana Jones",
+        "James Bond"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Qui a réalisé la saga 'Star Wars' à l'origine ?",
+      "options": [
+        "Steven Spielberg",
+        "George Lucas",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film d'animation met en scène un poisson-clown nommé Marin ?",
+      "options": [
+        "Le Monde de Nemo",
+        "Vice-Versa",
+        "Ratatouille",
+        "Là-haut"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur incarne Iron Man dans l'univers Marvel ?",
+      "options": [
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chanteur ivoirien est surnommé le 'Roi du Coupé-décalé' ?",
+      "options": [
+        "DJ Arafat",
+        "Serge Beynaud",
+        "Debordo Leekunfa",
+        "Josey"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film a remporté l'Oscar du meilleur film en 2020 ?",
+      "options": [
+        "1917",
+        "Joker",
+        "Parasite",
+        "Once Upon a Time in Hollywood"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Qui a composé la musique du film 'Le Roi Lion' ?",
+      "options": [
+        "John Williams",
+        "Hans Zimmer",
+        "Alan Menken",
+        "Danny Elfman"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe a chanté 'Bohemian Rhapsody' ?",
+      "options": [
+        "The Beatles",
+        "Queen",
+        "Led Zeppelin",
+        "Pink Floyd"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film met en scène un jeune sorcier nommé Harry Potter dans son premier volet ?",
+      "options": [
+        "Harry Potter à l'école des sorciers",
+        "Harry Potter et la Chambre des secrets",
+        "Harry Potter et le prisonnier d'Azkaban",
+        "Harry Potter et la coupe de feu"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur a incarné Jack Dawson dans 'Titanic' ?",
+      "options": [
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Tom Cruise",
+        "Matt Damon"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chanteuse ivoirienne est connue pour le titre 'Titi Money' ?",
+      "options": [
+        "Josey",
+        "Fadal Dey",
+        "Debordo Leekunfa",
+        "Suspect 95"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel studio a créé les films 'Toy Story' ?",
+      "options": [
+        "Disney",
+        "Pixar",
+        "DreamWorks",
+        "Illumination"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui a réalisé le film 'Inception' ?",
+      "options": [
+        "Christopher Nolan",
+        "Denis Villeneuve",
+        "David Fincher",
+        "Ridley Scott"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel chanteur américain est surnommé le 'Roi de la Pop' ?",
+      "options": [
+        "Prince",
+        "Michael Jackson",
+        "Elvis Presley",
+        "James Brown"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film raconte l'histoire d'un lion nommé Simba ?",
+      "options": [
+        "Madagascar",
+        "Le Roi Lion",
+        "Kung Fu Panda",
+        "Zootopie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel acteur incarne Thor dans les films Marvel ?",
+      "options": [
+        "Chris Evans",
+        "Chris Pratt",
+        "Chris Hemsworth",
+        "Chris Pine"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle chanteuse est surnommée la 'Reine de la Pop' ?",
+      "options": [
+        "Beyoncé",
+        "Madonna",
+        "Rihanna",
+        "Whitney Houston"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film d'animation Disney met en scène une princesse et une reine des glaces ?",
+      "options": [
+        "La Reine des neiges",
+        "Raiponce",
+        "Moana",
+        "Blanche-Neige"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réalisateur est connu pour les films 'Jurassic Park' et 'E.T.' ?",
+      "options": [
+        "George Lucas",
+        "Steven Spielberg",
+        "James Cameron",
+        "Tim Burton"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel artiste ivoirien a popularisé le mouvement 'Zouglou' ?",
+      "options": [
+        "Magic System",
+        "DJ Arafat",
+        "Yodé et Siro",
+        "Les Garagistes"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène un super-héros milliardaire nommé Bruce Wayne ?",
+      "options": [
+        "Superman",
+        "Batman",
+        "Iron Man",
+        "Spider-Man"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle actrice a joué Hermione Granger dans la saga Harry Potter ?",
+      "options": [
+        "Emma Watson",
+        "Emma Stone",
+        "Emma Roberts",
+        "Emma Thompson"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe de musique ivoirien a connu un grand succès avec 'Premier Gaou' ?",
+      "options": [
+        "Magic System",
+        "Espoir 2000",
+        "Meiway",
+        "Yode et Siro"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film Marvel introduit le personnage de Black Panther ?",
+      "options": [
+        "Avengers",
+        "Black Panther",
+        "Captain America",
+        "Doctor Strange"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel acteur incarne James Bond dans les films les plus récents (2015-2021) ?",
+      "options": [
+        "Pierce Brosnan",
+        "Daniel Craig",
+        "Sean Connery",
+        "Roger Moore"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chanteur camerounais-français est connu pour 'Coller la Petite' ?",
+      "options": [
+        "Fally Ipupa",
+        "Innoss'B",
+        "Dadju",
+        "Singuila"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film d'animation met en scène des voitures parlantes dans une ville appelée Radiator Springs ?",
+      "options": [
+        "Cars",
+        "Turbo",
+        "Wall-E",
+        "Rio"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse est connue pour l'album '25' et le titre 'Hello' ?",
+      "options": [
+        "Adele",
+        "Sia",
+        "Sam Smith",
+        "Ellie Goulding"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réalisateur a créé la saga 'Le Seigneur des Anneaux' au cinéma ?",
+      "options": [
+        "Peter Jackson",
+        "Guillermo del Toro",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien est surnommé 'Le Molare' ?",
+      "options": [
+        "Debordo Leekunfa",
+        "DJ Arafat",
+        "Serge Beynaud",
+        "Vetcho Lique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène un jeune garçon abandonné qui doit défendre sa maison contre des cambrioleurs ?",
+      "options": [
+        "Maman, j'ai raté l'avion",
+        "Le Grinch",
+        "Jumanji",
+        "E.T."
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la maison de disques associée à Michael Jackson au sommet de sa carrière ?",
+      "options": [
+        "Sony Music",
+        "Motown",
+        "Epic Records",
+        "Universal"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film d'animation raconte l'histoire d'une princesse polynésienne partant en mer ?",
+      "options": [
+        "Moana (Vaiana)",
+        "La Petite Sirène",
+        "Pocahontas",
+        "Mulan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur incarne Neo dans 'Matrix' ?",
+      "options": [
+        "Keanu Reeves",
+        "Will Smith",
+        "Tom Cruise",
+        "Brad Pitt"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste nigérian est connu pour le titre 'Essence' ?",
+      "options": [
+        "Burna Boy",
+        "Wizkid",
+        "Davido",
+        "Tekno"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film met en scène des jouets qui prennent vie quand les humains ne regardent pas ?",
+      "options": [
+        "Toy Story",
+        "Les Indestructibles",
+        "Monstres et Cie",
+        "Ratatouille"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle actrice a incarné Katniss Everdeen dans 'Hunger Games' ?",
+      "options": [
+        "Emma Watson",
+        "Jennifer Lawrence",
+        "Kristen Stewart",
+        "Shailene Woodley"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film d'animation met en scène des super-héros formant une famille ?",
+      "options": [
+        "Les Indestructibles",
+        "Big Hero 6",
+        "Les Gardiens de la Galaxie",
+        "Sky High"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste nigérian est connu pour le titre 'Ye' et 'Fall' ?",
+      "options": [
+        "Wizkid",
+        "Davido",
+        "Burna Boy",
+        "Tekno"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film met en scène un chasseur de trésors nommé Indiana Jones ?",
+      "options": [
+        "Les Aventuriers de l'arche perdue",
+        "La Momie",
+        "Tomb Raider",
+        "National Treasure"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel réalisateur ivoirien est connu pour ses films retraçant l'histoire de la Côte d'Ivoire ?",
+      "options": [
+        "Henri Duparc",
+        "Sidiki Bakaba",
+        "Yeo Kozoloa",
+        "Toutes ces réponses"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film Marvel réunit pour la première fois plusieurs super-héros comme Iron Man, Thor et Captain America ?",
+      "options": [
+        "Avengers",
+        "Iron Man 2",
+        "Captain America",
+        "Ant-Man"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien du Coupé-décalé est décédé en 2019 dans un accident ?",
+      "options": [
+        "Debordo Leekunfa",
+        "DJ Arafat",
+        "Serge Beynaud",
+        "Kedjevara"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel film met en scène un poisson-clown recherchant son fils dans l'océan ?",
+      "options": [
+        "Le Monde de Nemo",
+        "Shark Tale",
+        "Le Monde de Dory",
+        "Happy Feet"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur a incarné Black Panther, décédé en 2020 ?",
+      "options": [
+        "Michael B. Jordan",
+        "Chadwick Boseman",
+        "Winston Duke",
+        "Daniel Kaluuya"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle chanteuse française est connue pour l'album 'Joyeux Noël' et de nombreux tubes des années 2000 ?",
+      "options": [
+        "Zaz",
+        "Lorie",
+        "Vitaa",
+        "Amel Bent"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film d'animation met en scène une communauté de fourmis ou d'insectes travaillant ensemble ?",
+      "options": [
+        "1001 pattes",
+        "Fourmiz",
+        "Les deux réponses précédentes",
+        "Le Monde de Dory"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste ivoirien est célèbre pour le titre 'Sagacité' et pour ses collaborations internationales ?",
+      "options": [
+        "Serge Beynaud",
+        "Debordo Leekunfa",
+        "Kiff No Beat",
+        "Vetcho Lique"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène des dinosaures ressuscités dans un parc à thème ?",
+      "options": [
+        "King Kong",
+        "Jurassic Park",
+        "Godzilla",
+        "Le Monde perdu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel chanteur congolais est une légende de la rumba congolaise, souvent appelé 'le sapeur' ?",
+      "options": [
+        "Papa Wemba",
+        "Koffi Olomide",
+        "Fally Ipupa",
+        "Werrason"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film raconte l'histoire d'un robot nettoyeur resté seul sur Terre ?",
+      "options": [
+        "Wall-E",
+        "Big Hero 6",
+        "Robots",
+        "Astro Boy"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur incarne Spider-Man dans les films les plus récents du MCU ?",
+      "options": [
+        "Tobey Maguire",
+        "Andrew Garfield",
+        "Tom Holland",
+        "Miles Morales"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel artiste malien a été internationalement reconnu pour sa musique afro-blues, notamment Ali Farka Touré ?",
+      "options": [
+        "Salif Keita",
+        "Ali Farka Touré",
+        "Toumani Diabaté",
+        "Les trois sont des légendes maliennes"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film met en scène un jeune lion exilé qui doit reconquérir son trône ?",
+      "options": [
+        "Le Roi Lion",
+        "Kimba le lion blanc",
+        "Madagascar",
+        "Zootopie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse ivoirienne a représenté le pays avec des titres engagés et afro-pop ?",
+      "options": [
+        "Josey",
+        "Aicha Koné",
+        "Nash",
+        "Toutes ces réponses"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film Disney met en scène une jeune femme échangeant sa place pour sauver son père dans l'armée chinoise ?",
+      "options": [
+        "Mulan",
+        "Pocahontas",
+        "La Princesse et la Grenouille",
+        "Raiponce"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur incarne Wolverine dans les films X-Men ?",
+      "options": [
+        "Hugh Jackman",
+        "Patrick Stewart",
+        "Ian McKellen",
+        "James McAvoy"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste béninois-français a marqué la musique africaine avec des titres engagés dans les années 1970 ?",
+      "options": [
+        "Angélique Kidjo",
+        "Stan Tohon",
+        "Nel Oliver",
+        "G. G. Vickey"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène un jouet cow-boy nommé Woody et un astronaute nommé Buzz l'Éclair ?",
+      "options": [
+        "Toy Story",
+        "Buzz l'Éclair",
+        "Cars",
+        "Monstres et Cie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur français est connu pour son rôle dans 'Intouchables' aux côtés d'Omar Sy ?",
+      "options": [
+        "François Cluzet",
+        "Jean Dujardin",
+        "Gérard Depardieu",
+        "Daniel Auteuil"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien du zouglou a marqué les années 1990-2000 avec le groupe Les Garagistes ?",
+      "options": [
+        "Petit Yodé",
+        "Système Gazeur",
+        "Poussins Chocs",
+        "Toutes ces réponses sont des groupes de zouglou"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film met en scène des créatures monstrueuses générant de l'énergie à partir des cris d'enfants ?",
+      "options": [
+        "Monstres et Cie",
+        "Vice-Versa",
+        "Coco",
+        "Luca"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle actrice française est connue pour son rôle principal dans 'Amélie Poulain' ?",
+      "options": [
+        "Audrey Tautou",
+        "Marion Cotillard",
+        "Sophie Marceau",
+        "Léa Seydoux"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste camerounais est une légende du Makossa, notamment avec 'Soul Makossa' ?",
+      "options": [
+        "Manu Dibango",
+        "Petit Pays",
+        "Lady Ponce",
+        "Krotal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film Pixar raconte l'histoire d'un vieil homme qui fait voler sa maison avec des ballons ?",
+      "options": [
+        "Là-haut",
+        "Wall-E",
+        "Coco",
+        "Vice-Versa"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel acteur incarne le Joker dans le film éponyme de 2019 ?",
+      "options": [
+        "Joaquin Phoenix",
+        "Jared Leto",
+        "Heath Ledger",
+        "Jack Nicholson"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien est connu pour populariser le Zouglou avec le groupe Magic System à l'international ?",
+      "options": [
+        "A'Salfo",
+        "Goudé Djess",
+        "Manadja",
+        "Tino"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène une pieuvre cuisinière secrète dans un restaurant parisien ?",
+      "options": [
+        "Ratatouille",
+        "Cars",
+        "Là-haut",
+        "Le Monde de Nemo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle actrice américaine a incarné Wonder Woman au cinéma ?",
+      "options": [
+        "Gal Gadot",
+        "Scarlett Johansson",
+        "Brie Larson",
+        "Margot Robbie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste sud-africain est célèbre pour la chanson 'Jerusalema' devenue virale mondialement ?",
+      "options": [
+        "Master KG",
+        "Black Coffee",
+        "DJ Maphorisa",
+        "Kabza De Small"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel film met en scène un dragon apprivoisé par un jeune viking nommé Harold ?",
+      "options": [
+        "Dragons",
+        "Comment dresser son dragon",
+        "Les deux réponses désignent le même film",
+        "Shrek"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel acteur incarne Captain America dans le MCU ?",
+      "options": [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Chris Pratt",
+        "Chris Pine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste guinéen est une légende de la musique mandingue, connu pour la kora ?",
+      "options": [
+        "Mory Kanté",
+        "Sekouba Bambino",
+        "Les deux réponses précédentes",
+        "Kandia Kouyaté"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel film met en scène des animaux de la jungle chantant et dansant après avoir échappé à un zoo ?",
+      "options": [
+        "Madagascar",
+        "Le Roi Lion",
+        "Kung Fu Panda",
+        "Zootopie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle chanteuse américaine est connue pour l'album 'Lemonade' et le titre 'Halo' ?",
+      "options": [
+        "Beyoncé",
+        "Rihanna",
+        "Alicia Keys",
+        "Mariah Carey"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien est connu pour le titre 'Yaba' et pour être une figure du Coupé-décalé ?",
+      "options": [
+        "Kiff No Beat",
+        "DJ Léo",
+        "Suspect 95",
+        "Les trois artistes ont marqué le genre"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel film met en scène une famille de super-héros vivant sous une identité secrète en banlieue ?",
+      "options": [
+        "Les Indestructibles",
+        "Sky High",
+        "Mystery Men",
+        "Zootopie"
+      ],
+      "correct": 0
+    }
   ],
-  cotedivoire: [
-    {q:"Quelle est la capitale politique de la Côte d'Ivoire ?", options:["Abidjan","Bouaké","Yamoussoukro","San-Pédro"], correct:2},
-    {q:"Quelle est la monnaie utilisée en Côte d'Ivoire ?", options:["Le cedi","Le franc CFA","Le naira","Le dollar"], correct:1},
-    {q:"Quel est le surnom donné à la Côte d'Ivoire lié au cacao ?", options:["Le pays du café","Le pays de l'or","Premier producteur mondial de cacao","Le pays du diamant"], correct:2},
-    {q:"Quelle est la langue officielle de la Côte d'Ivoire ?", options:["Anglais","Français","Portugais","Arabe"], correct:1},
+  "cotedivoire": [
+    {
+      "q": "Quelle est la capitale politique de la Côte d'Ivoire ?",
+      "options": [
+        "Abidjan",
+        "Bouaké",
+        "Yamoussoukro",
+        "San-Pédro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la monnaie utilisée en Côte d'Ivoire ?",
+      "options": [
+        "Le cedi",
+        "Le franc CFA",
+        "Le naira",
+        "Le dollar"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le surnom donné à la Côte d'Ivoire lié au cacao ?",
+      "options": [
+        "Le pays du café",
+        "Le pays de l'or",
+        "Premier producteur mondial de cacao",
+        "Le pays du diamant"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quelle est la langue officielle de la Côte d'Ivoire ?",
+      "options": [
+        "Anglais",
+        "Français",
+        "Portugais",
+        "Arabe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle est la plus grande ville de Côte d'Ivoire ?",
+      "options": [
+        "Yamoussoukro",
+        "Bouaké",
+        "Abidjan",
+        "Korhogo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du fleuve qui traverse la Côte d'Ivoire ?",
+      "options": [
+        "Le Niger",
+        "Le Bandama",
+        "Le Congo",
+        "Le Sénégal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "En quelle année la Côte d'Ivoire a-t-elle obtenu son indépendance ?",
+      "options": [
+        "1958",
+        "1960",
+        "1962",
+        "1965"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de la basilique construite à Yamoussoukro, l'une des plus grandes au monde ?",
+      "options": [
+        "Basilique Saint-Pierre",
+        "Basilique Notre-Dame de la Paix",
+        "Basilique Sacré-Cœur",
+        "Basilique Saint-Paul"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est l'animal symbole de l'équipe nationale de football ivoirienne ?",
+      "options": [
+        "Le lion",
+        "L'éléphant",
+        "L'aigle",
+        "Le léopard"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui est considéré comme le père de l'indépendance ivoirienne et premier président du pays ?",
+      "options": [
+        "Laurent Gbagbo",
+        "Félix Houphouët-Boigny",
+        "Alassane Ouattara",
+        "Henri Konan Bédié"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville ivoirienne est surnommée la 'Perle des lagunes' ?",
+      "options": [
+        "Bouaké",
+        "Yamoussoukro",
+        "Abidjan",
+        "San-Pédro"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel type de musique populaire est originaire de Côte d'Ivoire, mêlant rythmes traditionnels et modernes ?",
+      "options": [
+        "Le Coupé-décalé",
+        "L'Afrobeat",
+        "Le Highlife",
+        "Le Makossa"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la deuxième plus grande ville de Côte d'Ivoire ?",
+      "options": [
+        "Korhogo",
+        "Bouaké",
+        "Daloa",
+        "San-Pédro"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays ne partage pas de frontière avec la Côte d'Ivoire ?",
+      "options": [
+        "Ghana",
+        "Liberia",
+        "Sénégal",
+        "Guinée"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le principal port de Côte d'Ivoire par lequel transite le cacao exporté ?",
+      "options": [
+        "Port de San-Pédro",
+        "Port d'Abidjan",
+        "Port de Sassandra",
+        "Les deux premiers"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle fête nationale la Côte d'Ivoire célèbre-t-elle le 7 août ?",
+      "options": [
+        "Fête du Travail",
+        "Fête de l'Indépendance",
+        "Fête de la République",
+        "Fête de l'Armée"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du lac artificiel situé à Yamoussoukro, réputé pour ses caïmans sacrés ?",
+      "options": [
+        "Lac Kossou",
+        "Lac des Caïmans",
+        "Lac Buyo",
+        "Lac Taabo"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle région ivoirienne est réputée pour la production de coton ?",
+      "options": [
+        "Le Nord (région de Korhogo)",
+        "Le Sud (région d'Abidjan)",
+        "L'Ouest (région de Man)",
+        "L'Est (région d'Abengourou)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du plus haut sommet de Côte d'Ivoire ?",
+      "options": [
+        "Mont Nimba",
+        "Mont Tonkoui",
+        "Mont Sangbé",
+        "Mont Momi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle compagnie aérienne nationale représente la Côte d'Ivoire ?",
+      "options": [
+        "Air Côte d'Ivoire",
+        "Air Afrique",
+        "Ivoire Air",
+        "CI Airlines"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom donné à la période de trouble politique qu'a connue la Côte d'Ivoire au début des années 2000 ?",
+      "options": [
+        "La crise ivoirienne",
+        "La révolution d'Abidjan",
+        "Le conflit du Nord",
+        "La guerre civile de 1990"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel artiste ivoirien est connu comme une légende du Zouglou avec le groupe Espoir 2000 ?",
+      "options": [
+        "Yodé et Siro",
+        "Meiway",
+        "Petit Denis",
+        "Aicha Koné"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la principale religion pratiquée en Côte d'Ivoire, avec le christianisme et l'islam ?",
+      "options": [
+        "Le bouddhisme",
+        "Les religions traditionnelles africaines",
+        "L'hindouisme",
+        "Le judaïsme"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel plat est considéré comme emblématique de la cuisine ivoirienne, à base de banane plantain écrasée ?",
+      "options": [
+        "L'attiéké",
+        "Le foutou",
+        "Le kedjenou",
+        "Le garba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel aliment fermenté à base de manioc est très populaire en Côte d'Ivoire ?",
+      "options": [
+        "Le foutou",
+        "L'attiéké",
+        "Le placali",
+        "Le fufu"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du célèbre stade de football situé à Abidjan ?",
+      "options": [
+        "Stade Félix Houphouët-Boigny",
+        "Stade Alassane Ouattara",
+        "Stade de la Paix",
+        "Stade Robert Champroux"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle université est la plus ancienne et l'une des plus grandes de Côte d'Ivoire, située à Abidjan ?",
+      "options": [
+        "Université Alassane Ouattara",
+        "Université Félix Houphouët-Boigny",
+        "Université Nangui Abrogoua",
+        "Université Peleforo Gon Coulibaly"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du célèbre écrivain ivoirien auteur de 'Les Soleils des indépendances' ?",
+      "options": [
+        "Bernard Dadié",
+        "Ahmadou Kourouma",
+        "Véronique Tadjo",
+        "Jean-Marie Adiaffi"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle danse traditionnelle est originaire de la région Ouest de la Côte d'Ivoire, pratiquée sur échasses ?",
+      "options": [
+        "Le Zaouli",
+        "Le Goli",
+        "La danse des échassiers (Moridjan)",
+        "Le Djansa"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel masque traditionnel ivoirien, dansé par les Gouro, est reconnu par l'UNESCO ?",
+      "options": [
+        "Le masque Zaouli",
+        "Le masque Poro",
+        "Le masque Dan",
+        "Le masque Sénoufo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la spécialité culinaire à base de poisson braisé et d'attiéké très populaire dans les rues d'Abidjan ?",
+      "options": [
+        "Le Garba",
+        "Le Kedjenou",
+        "L'Alloco",
+        "Le Bangui"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel plat à base de poulet mijoté dans une sauce tomate et aubergine est typiquement ivoirien ?",
+      "options": [
+        "Le Kedjenou",
+        "Le Foutou",
+        "L'Attiéké",
+        "Le Placali"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fleuve marque une partie de la frontière entre la Côte d'Ivoire et le Ghana ?",
+      "options": [
+        "La Comoé",
+        "Le Bandama",
+        "Le Cavally",
+        "Le Sassandra"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel fleuve marque une partie de la frontière entre la Côte d'Ivoire et le Liberia ?",
+      "options": [
+        "La Comoé",
+        "Le Bandama",
+        "Le Cavally",
+        "Le Sassandra"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du parc national ivoirien classé au patrimoine mondial de l'UNESCO, réputé pour sa biodiversité ?",
+      "options": [
+        "Parc national de la Comoé",
+        "Parc national de Taï",
+        "Parc national d'Azagny",
+        "Parc national du Banco"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle boisson alcoolisée traditionnelle est extraite du palmier en Côte d'Ivoire ?",
+      "options": [
+        "Le bangui",
+        "Le koutoukou",
+        "Les deux réponses précédentes",
+        "Le tchapalo"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel groupe ethnique est majoritairement présent dans la région de Korhogo, au nord de la Côte d'Ivoire ?",
+      "options": [
+        "Les Baoulé",
+        "Les Sénoufo",
+        "Les Bété",
+        "Les Dioula"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel groupe ethnique est historiquement associé à la région centrale autour de Bouaké et Yamoussoukro ?",
+      "options": [
+        "Les Baoulé",
+        "Les Sénoufo",
+        "Les Yacouba",
+        "Les Agni"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la capitale économique de la Côte d'Ivoire, principal centre d'affaires du pays ?",
+      "options": [
+        "Yamoussoukro",
+        "Abidjan",
+        "Bouaké",
+        "San-Pédro"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du célèbre pont reliant le Plateau à Cocody dans la ville d'Abidjan ?",
+      "options": [
+        "Pont Félix Houphouët-Boigny",
+        "Pont Henri Konan Bédié",
+        "Pont de Gaulle",
+        "Les deux premiers"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel est le nom du plat à base de semoule de manioc accompagné de sauce, très consommé en Côte d'Ivoire ?",
+      "options": [
+        "L'Attiéké",
+        "Le Couscous ivoirien",
+        "Le Placali",
+        "Le Foutou de manioc"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle région ivoirienne est réputée pour la production d'hévéa et de caoutchouc ?",
+      "options": [
+        "Le Sud-Ouest (région de San-Pédro)",
+        "Le Nord (région de Korhogo)",
+        "L'Est (région d'Abengourou)",
+        "Le Centre (région de Bouaké)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du fleuve principal qui traverse Bouaké et le centre du pays ?",
+      "options": [
+        "Le Bandama",
+        "La Comoé",
+        "Le Cavally",
+        "Le Sassandra"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ville ivoirienne est réputée pour ses cascades et son climat montagneux à l'Ouest ?",
+      "options": [
+        "Man",
+        "Daloa",
+        "Gagnoa",
+        "Divo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du célèbre marché populaire situé à Abidjan, connu pour le commerce informel ?",
+      "options": [
+        "Marché de Treichville",
+        "Marché de Adjamé",
+        "Marché de Cocody",
+        "Toutes ces réponses sont de vrais marchés d'Abidjan"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel groupe ethnique est majoritairement présent dans la région de Man, à l'ouest du pays ?",
+      "options": [
+        "Les Yacouba (Dan)",
+        "Les Baoulé",
+        "Les Sénoufo",
+        "Les Agni"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la principale culture d'exportation qui fait de la Côte d'Ivoire le premier producteur mondial ?",
+      "options": [
+        "Le café",
+        "Le cacao",
+        "Le coton",
+        "L'hévéa"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom du célèbre quartier d'affaires du centre-ville d'Abidjan ?",
+      "options": [
+        "Le Plateau",
+        "Cocody",
+        "Yopougon",
+        "Marcory"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la commune la plus peuplée d'Abidjan ?",
+      "options": [
+        "Cocody",
+        "Yopougon",
+        "Abobo",
+        "Treichville"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de l'ancien président ivoirien qui a dirigé le pays de 2000 à 2011 ?",
+      "options": [
+        "Henri Konan Bédié",
+        "Laurent Gbagbo",
+        "Alassane Ouattara",
+        "Robert Guéï"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel est le nom de l'actuel président de la Côte d'Ivoire (depuis 2011) ?",
+      "options": [
+        "Laurent Gbagbo",
+        "Alassane Ouattara",
+        "Henri Konan Bédié",
+        "Guillaume Soro"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle ville ivoirienne est surnommée la 'capitale du Bandama' ?",
+      "options": [
+        "Bouaké",
+        "Tiassalé",
+        "Dimbokro",
+        "Toumodi"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du festival culturel emblématique célébré à Bouaké, dédié à la culture Baoulé ?",
+      "options": [
+        "Le Fêtes des Masques",
+        "Le Festival Marché des Arts du Spectacle",
+        "Le FEMUA",
+        "Le Carnaval de Bouaké"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du grand parc animalier situé dans le nord de la Côte d'Ivoire ?",
+      "options": [
+        "Parc national de la Comoé",
+        "Parc national de Taï",
+        "Parc national d'Azagny",
+        "Parc du Banco"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la spécialité culinaire à base de riz et de sauce arachide très populaire en Côte d'Ivoire ?",
+      "options": [
+        "Le riz gras",
+        "La sauce graine",
+        "Les deux réponses désignent des plats populaires distincts",
+        "Le tô"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du célèbre stade situé à Bouaké utilisé pour la CAN 2023 ?",
+      "options": [
+        "Stade de la Paix",
+        "Stade Charles Konan Banny",
+        "Stade Amadou Gon Coulibaly",
+        "Stade Bouaké Sports"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel écrivain ivoirien est l'auteur de 'Climbié', roman autobiographique ?",
+      "options": [
+        "Bernard Dadié",
+        "Ahmadou Kourouma",
+        "Jean-Marie Adiaffi",
+        "Véronique Tadjo"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la boisson traditionnelle à base de mil ou de maïs fermenté populaire en Côte d'Ivoire ?",
+      "options": [
+        "Le tchapalo",
+        "Le bangui",
+        "Le koutoukou",
+        "Le gnamakoudji"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du grand pont routier reliant Abidjan à Grand-Bassam en front de lagune ?",
+      "options": [
+        "Pont Henri Konan Bédié (Pont HKB)",
+        "Pont Félix Houphouët-Boigny",
+        "Pont de Gaulle",
+        "Pont Charles de Gaulle"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ville ivoirienne classée au patrimoine mondial de l'UNESCO est réputée pour son architecture coloniale ?",
+      "options": [
+        "Grand-Bassam",
+        "Sassandra",
+        "Assinie",
+        "Jacqueville"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du principal aéroport international de Côte d'Ivoire, situé à Abidjan ?",
+      "options": [
+        "Aéroport Félix Houphouët-Boigny",
+        "Aéroport d'Yamoussoukro",
+        "Aéroport de Bouaké",
+        "Aéroport de San-Pédro"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la spécialité de rue ivoirienne à base de brochettes de viande grillée ?",
+      "options": [
+        "Le Choukouya",
+        "Le Garba",
+        "L'Alloco",
+        "Le Kedjenou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel groupe ethnique est historiquement lié à la région de Grand-Bassam et Abidjan (lagunaire) ?",
+      "options": [
+        "Les Ébrié",
+        "Les Baoulé",
+        "Les Sénoufo",
+        "Les Dan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la ville portuaire du sud-ouest ivoirien, deuxième port du pays après Abidjan ?",
+      "options": [
+        "San-Pédro",
+        "Sassandra",
+        "Tabou",
+        "Grand-Lahou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du grand rassemblement religieux musulman annuel célébré en Côte d'Ivoire ?",
+      "options": [
+        "La Tabaski",
+        "Le Maouloud",
+        "Les deux sont célébrés",
+        "Aucune de ces réponses"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel est le nom du plat à base de banane plantain frite très populaire en Côte d'Ivoire ?",
+      "options": [
+        "L'Alloco",
+        "Le Foutou",
+        "L'Attiéké",
+        "Le Kedjenou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la deuxième langue la plus parlée en Côte d'Ivoire après le français, comme langue véhiculaire ?",
+      "options": [
+        "Le dioula",
+        "L'anglais",
+        "L'espagnol",
+        "L'arabe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du célèbre chanteur et 'Golden Boy' du zouglou, décédé, connu pour 'Ce n'est pas la même chose' ?",
+      "options": [
+        "Bilé Didier",
+        "Petit Denis",
+        "Meiway",
+        "Yode et Siro"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quelle industrie majeure est présente à Abidjan grâce à son port en eau profonde ?",
+      "options": [
+        "L'industrie pétrolière et de raffinage",
+        "L'industrie textile uniquement",
+        "L'industrie minière uniquement",
+        "Aucune industrie majeure"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du barrage hydroélectrique majeur situé sur le fleuve Bandama ?",
+      "options": [
+        "Barrage de Kossou",
+        "Barrage de Buyo",
+        "Barrage de Taabo",
+        "Toutes ces réponses sont des barrages ivoiriens"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle est la fête célébrant les récoltes d'ignames, importante chez plusieurs peuples ivoiriens ?",
+      "options": [
+        "La fête de l'Igname",
+        "La fête du Cacao",
+        "La fête du Coton",
+        "La fête du Café"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom de la chaîne de télévision publique nationale de Côte d'Ivoire ?",
+      "options": [
+        "RTI (Radiodiffusion Télévision Ivoirienne)",
+        "NCI",
+        "La 3",
+        "Life TV"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la spécialité artisanale traditionnelle du pays Baoulé, réputée pour ses poids en bronze et son or ?",
+      "options": [
+        "L'orfèvrerie et la bijouterie en or",
+        "La poterie",
+        "Le tissage du pagne",
+        "La sculpture sur bois"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du célèbre écrivain et académicien ivoirien, premier Africain à l'Académie française ?",
+      "options": [
+        "Bernard Dadié",
+        "Ahmadou Kourouma",
+        "Amadou Hampâté Bâ",
+        "Aucun Ivoirien n'a été académicien français"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quelle communauté est réputée pour le commerce et est très présente sur les marchés d'Abidjan et du Nord ?",
+      "options": [
+        "Les Dioula",
+        "Les Bété",
+        "Les Wê",
+        "Les Attié"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du tissu traditionnel tissé à la main, symbole culturel important en Côte d'Ivoire ?",
+      "options": [
+        "Le Kita (pagne tissé)",
+        "Le Bogolan",
+        "Le Kente",
+        "Le Wax"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle ville ivoirienne est le siège de la Banque Africaine de Développement (BAD) ?",
+      "options": [
+        "Abidjan",
+        "Yamoussoukro",
+        "Bouaké",
+        "Grand-Bassam"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom donné à la période de forte croissance économique en Côte d'Ivoire entre les années 1960 et 1970 ?",
+      "options": [
+        "Le 'miracle ivoirien'",
+        "L'âge d'or ivoirien",
+        "La révolution verte",
+        "La décennie glorieuse"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quelle est la principale zone de production de café en Côte d'Ivoire ?",
+      "options": [
+        "La région du Sud-Ouest et du Centre-Ouest",
+        "Le Nord uniquement",
+        "L'extrême Est uniquement",
+        "La capitale Abidjan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel est le nom du célèbre parc situé au cœur d'Abidjan, poumon vert de la ville ?",
+      "options": [
+        "Le Parc national du Banco",
+        "Le Parc de la Comoé",
+        "Le Parc de Taï",
+        "Le Parc d'Azagny"
+      ],
+      "correct": 0
+    }
   ],
-  drapeaux: [
-    {q:"Le drapeau avec une feuille d'érable rouge appartient à quel pays ?", options:["Suisse","Autriche","Canada","Pérou"], correct:2},
-    {q:"Quel pays a un drapeau avec un dragon vert ?", options:["Bhoutan","Népal","Thaïlande","Chine"], correct:0},
-    {q:"À quel pays appartient un drapeau orange, blanc, vert (bandes verticales) ?", options:["Irlande","Côte d'Ivoire","Italie","Nigeria"], correct:1},
-    {q:"Le drapeau blanc et rouge avec un cercle central appartient à quel pays ?", options:["Canada","Japon","Pologne","Suisse"], correct:1},
-  ],
+  "drapeaux": [
+    {
+      "q": "Le drapeau avec une feuille d'érable rouge appartient à quel pays ?",
+      "options": [
+        "Suisse",
+        "Autriche",
+        "Canada",
+        "Pérou"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a un drapeau avec un dragon vert ?",
+      "options": [
+        "Bhoutan",
+        "Népal",
+        "Thaïlande",
+        "Chine"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "À quel pays appartient un drapeau orange, blanc, vert (bandes verticales) ?",
+      "options": [
+        "Irlande",
+        "Côte d'Ivoire",
+        "Italie",
+        "Nigeria"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau blanc et rouge avec un cercle central appartient à quel pays ?",
+      "options": [
+        "Canada",
+        "Japon",
+        "Pologne",
+        "Suisse"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge, blanc, bleu avec une étoile jaune au centre ?",
+      "options": [
+        "Vietnam",
+        "Cuba",
+        "Chili",
+        "Panama"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau avec une croix blanche sur fond rouge appartient à quel pays ?",
+      "options": [
+        "Autriche",
+        "Suisse",
+        "Danemark",
+        "Norvège"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau vert, jaune, rouge avec une étoile noire au centre ?",
+      "options": [
+        "Sénégal",
+        "Ghana",
+        "Cameroun",
+        "Mali"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau avec des bandes horizontales noire, jaune et rouge appartient à quel pays ?",
+      "options": [
+        "Belgique",
+        "Allemagne",
+        "Espagne",
+        "Portugal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau bleu, blanc, rouge en bandes verticales, identique en couleurs à celui de la France mais dans un ordre différent ?",
+      "options": [
+        "Pays-Bas",
+        "Luxembourg",
+        "Russie",
+        "Aucun, c'est unique"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau avec une étoile à cinq branches blanche sur fond rouge et bleu appartient à quel pays ?",
+      "options": [
+        "Cuba",
+        "Porto Rico",
+        "Chili",
+        "Texas (USA)"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau orange, blanc, vert avec une roue bleue (chakra) au centre ?",
+      "options": [
+        "Sri Lanka",
+        "Inde",
+        "Népal",
+        "Bangladesh"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau rouge avec une faucille et un marteau appartenait à quel pays (historique) ?",
+      "options": [
+        "Chine",
+        "URSS",
+        "Cuba",
+        "Vietnam"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau avec le Soleil levant rouge sur fond blanc ?",
+      "options": [
+        "Corée du Sud",
+        "Chine",
+        "Japon",
+        "Vietnam"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le drapeau vert, blanc, orange en bandes verticales avec une roue bleue appartient à quel pays ?",
+      "options": [
+        "Inde",
+        "Irlande",
+        "Côte d'Ivoire",
+        "Niger"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau bleu et jaune en deux bandes horizontales égales ?",
+      "options": [
+        "Suède",
+        "Ukraine",
+        "Roumanie",
+        "Colombie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau avec une croix scandinave bleue sur fond jaune appartient à quel pays ?",
+      "options": [
+        "Norvège",
+        "Finlande",
+        "Suède",
+        "Danemark"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a un drapeau rouge et blanc avec une feuille d'érable ?",
+      "options": [
+        "Canada",
+        "États-Unis",
+        "Autriche",
+        "Pologne"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau avec des étoiles blanches sur fond bleu et des bandes rouges et blanches appartient à quel pays ?",
+      "options": [
+        "Royaume-Uni",
+        "États-Unis",
+        "Australie",
+        "Nouvelle-Zélande"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau vert avec un croissant et une étoile blanche ?",
+      "options": [
+        "Turquie",
+        "Pakistan",
+        "Algérie",
+        "Tunisie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau rouge avec un croissant et une étoile blanche appartient à quel pays ?",
+      "options": [
+        "Pakistan",
+        "Algérie",
+        "Turquie",
+        "Tunisie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a un drapeau avec des bandes horizontales vert, blanc, rouge et un aigle au centre ?",
+      "options": [
+        "Iran",
+        "Mexique",
+        "Italie",
+        "Hongrie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau bleu, blanc, rouge en bandes horizontales appartient à quel pays ?",
+      "options": [
+        "France",
+        "Russie",
+        "Pays-Bas",
+        "Luxembourg"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau jaune avec une bande bleue et une bande rouge (bandes horizontales) ?",
+      "options": [
+        "Colombie",
+        "Équateur",
+        "Venezuela",
+        "Les trois"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le drapeau avec une étoile rouge à cinq branches sur fond entièrement rouge appartient à quel pays ?",
+      "options": [
+        "Vietnam",
+        "Chine",
+        "Corée du Nord",
+        "Laos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau vert, blanc, vert en bandes verticales avec un aigle rouge central ?",
+      "options": [
+        "Égypte",
+        "Syrie",
+        "Irak",
+        "Aucun de ces pays"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le drapeau blanc avec une feuille verte de fougère argentée noire appartient à quel pays (drapeau alternatif) ?",
+      "options": [
+        "Australie",
+        "Nouvelle-Zélande",
+        "Fidji",
+        "Samoa"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge avec une croix blanche nordique décentrée ?",
+      "options": [
+        "Norvège",
+        "Islande",
+        "Danemark",
+        "Suède"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau vert, jaune, rouge en bandes horizontales appartient à quel pays est-africain ?",
+      "options": [
+        "Kenya",
+        "Éthiopie",
+        "Tanzanie",
+        "Ouganda"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau noir, rouge, jaune en bandes horizontales ?",
+      "options": [
+        "Belgique",
+        "Allemagne",
+        "Autriche",
+        "Pays-Bas"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau rouge, blanc, noir avec un aigle doré appartient à quel pays du Moyen-Orient ?",
+      "options": [
+        "Égypte",
+        "Jordanie",
+        "Palestine",
+        "Yémen"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau vert avec un cercle blanc contenant un motif rouge (Taegeuk) ?",
+      "options": [
+        "Japon",
+        "Corée du Sud",
+        "Vietnam",
+        "Thaïlande"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau bleu ciel avec une carte blanche du pays au centre appartient à quel pays ?",
+      "options": [
+        "Chypre",
+        "Malte",
+        "Kosovo",
+        "Les deux premiers"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes horizontales rouge, blanc, rouge ?",
+      "options": [
+        "Autriche",
+        "Pologne",
+        "Monaco",
+        "Indonésie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau à bandes horizontales blanc, rouge appartient à quel pays (dans cet ordre, de haut en bas) ?",
+      "options": [
+        "Pologne",
+        "Monaco",
+        "Indonésie",
+        "Autriche"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau rouge avec une bande blanche et bleue et un blason central complexe ?",
+      "options": [
+        "Serbie",
+        "Croatie",
+        "Slovénie",
+        "Bosnie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau vert, blanc, orange (bandes verticales, ordre inverse de celui de l'Irlande) appartient à quel pays ?",
+      "options": [
+        "Irlande",
+        "Côte d'Ivoire",
+        "Niger",
+        "Mali"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau étoilé bleu et blanc avec douze étoiles en cercle ?",
+      "options": [
+        "ONU",
+        "Union européenne",
+        "UNESCO",
+        "OTAN"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau rouge avec une feuille de chanvre appartenait autrefois à quel mouvement/pays (drapeau historique) ?",
+      "options": [
+        "Jamaïque",
+        "Éthiopie",
+        "Aucun pays officiel",
+        "Ghana"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes verticales vert, jaune, rouge avec une étoile noire (symbole du panafricanisme) ?",
+      "options": [
+        "Ghana",
+        "Sénégal",
+        "Mali",
+        "Cameroun"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau à bandes horizontales rouge, jaune, vert avec un lion couronné appartient à quel pays ?",
+      "options": [
+        "Éthiopie (ancien drapeau)",
+        "Ghana",
+        "Cameroun",
+        "Sénégal"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes horizontales bleu, jaune, rouge ?",
+      "options": [
+        "Roumanie",
+        "Tchad",
+        "Moldavie",
+        "Andorre"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau blanc avec une croix rouge appartient à quel pays nordique ?",
+      "options": [
+        "Suède",
+        "Danemark",
+        "Norvège",
+        "Islande"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau vert, blanc, rouge en bandes verticales, similaire à l'Italie mais avec un blason ?",
+      "options": [
+        "Mexique",
+        "Hongrie",
+        "Bulgarie",
+        "Iran"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau à bandes horizontales rouge, jaune, vert avec une roue appartient à quel pays asiatique ?",
+      "options": [
+        "Inde",
+        "Myanmar",
+        "Sri Lanka",
+        "Bangladesh"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau bleu avec une croix jaune nordique décentrée ?",
+      "options": [
+        "Suède",
+        "Finlande",
+        "Norvège",
+        "Islande"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau rouge, blanc, rouge en bandes horizontales appartient à quel pays d'Asie du Sud-Est ?",
+      "options": [
+        "Vietnam",
+        "Laos",
+        "Indonésie",
+        "Singapour"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau composé uniquement de rouge avec un disque blanc contenant une carte ?",
+      "options": [
+        "Japon",
+        "Bangladesh",
+        "Corée du Sud",
+        "Palaos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau vert, blanc, rouge avec un cèdre au centre appartient à quel pays du Moyen-Orient ?",
+      "options": [
+        "Syrie",
+        "Liban",
+        "Jordanie",
+        "Irak"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge avec un aigle bicéphale noir au centre ?",
+      "options": [
+        "Serbie",
+        "Albanie",
+        "Monténégro",
+        "Macédoine du Nord"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau bleu, blanc, rouge horizontal avec une étoile rouge dans un cercle blanc appartient à quel pays d'Asie ?",
+      "options": [
+        "Vietnam",
+        "Thaïlande",
+        "Laos",
+        "Cambodge"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau jaune avec une bande bleue traversant en diagonale ?",
+      "options": [
+        "Colombie",
+        "Brésil",
+        "Venezuela",
+        "Guatemala"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau vert avec un croissant et des étoiles blanches appartient à quel pays d'Afrique du Nord ?",
+      "options": [
+        "Maroc",
+        "Algérie",
+        "Libye",
+        "Mauritanie"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes horizontales bleu, blanc, bleu avec une étoile centrale ?",
+      "options": [
+        "Israël",
+        "Somalie",
+        "Argentine",
+        "Guatemala"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau rouge avec une étoile jaune à cinq branches et quatre petites étoiles appartient à quel pays ?",
+      "options": [
+        "Vietnam",
+        "Chine",
+        "Corée du Nord",
+        "Laos"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge, blanc, noir avec un aigle doré tenant un serpent ?",
+      "options": [
+        "Espagne",
+        "Mexique",
+        "Portugal",
+        "Pérou"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau bleu, jaune en deux triangles avec une étoile appartient à quel pays africain austral ?",
+      "options": [
+        "Namibie",
+        "Botswana",
+        "Zambie",
+        "Zimbabwe"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau vert, blanc en bandes horizontales avec un croissant rouge ?",
+      "options": [
+        "Algérie",
+        "Turquie",
+        "Pakistan",
+        "Aucun de ces pays"
+      ],
+      "correct": 3
+    },
+    {
+      "q": "Le drapeau à bandes horizontales rouge, blanc, bleu avec un blason central complexe appartient à quel pays d'Amérique du Sud ?",
+      "options": [
+        "Costa Rica",
+        "Panama",
+        "Chili",
+        "Cuba"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes diagonales rouge et blanche avec une croix bleue ?",
+      "options": [
+        "Écosse",
+        "Jamaïque",
+        "Islande",
+        "Norvège"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau blanc avec une feuille d'érable rouge au centre et deux bandes rouges appartient à quel pays ?",
+      "options": [
+        "Canada",
+        "Autriche",
+        "Suisse",
+        "Pérou"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau vert avec une étoile rouge à cinq branches au centre ?",
+      "options": [
+        "Bénin",
+        "Burkina Faso",
+        "Ghana",
+        "Congo-Brazzaville"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau à bandes horizontales vert, jaune, rouge avec un lion appartenait à quel pays africain avant 1975 (ancien drapeau) ?",
+      "options": [
+        "Éthiopie",
+        "Somalie",
+        "Kenya",
+        "Soudan"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau rouge avec une croix scandinave blanche ?",
+      "options": [
+        "Norvège",
+        "Suisse",
+        "Danemark",
+        "Autriche"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau rouge, jaune, vert en bandes horizontales avec deux étoiles vertes appartient à quel pays ?",
+      "options": [
+        "Guinée-Bissau",
+        "Congo-Brazzaville",
+        "Bénin",
+        "São Tomé-et-Príncipe"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau blanc avec un cercle rouge, symbolisant le soleil ?",
+      "options": [
+        "Chine",
+        "Japon",
+        "Corée du Sud",
+        "Bangladesh"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau à bandes verticales bleu, blanc, bleu avec un soleil doré au centre appartient à quel pays d'Amérique du Sud ?",
+      "options": [
+        "Argentine",
+        "Uruguay",
+        "Paraguay",
+        "Bolivie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes horizontales noir, rouge, jaune avec une étoile verte ?",
+      "options": [
+        "Cameroun",
+        "Ghana",
+        "Sénégal",
+        "Guinée"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau bleu avec des étoiles blanches disposées en croix du Sud appartient à quel pays océanien ?",
+      "options": [
+        "Fidji",
+        "Nouvelle-Zélande",
+        "Australie",
+        "Samoa"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge, blanc, noir en bandes horizontales avec un aigle doré (République arabe) ?",
+      "options": [
+        "Égypte",
+        "Syrie",
+        "Irak (ancien)",
+        "Yémen"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau vert, blanc, rouge en bandes verticales sans emblème appartient à quel pays ?",
+      "options": [
+        "Italie",
+        "Mexique",
+        "Iran",
+        "Hongrie"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Quel pays a un drapeau rouge uni avec un swastika bleu dans un cercle blanc (drapeau historique, aujourd'hui différent) ?",
+      "options": [
+        "Ce drapeau n'existe pas de nos jours",
+        "Allemagne actuelle",
+        "Autriche actuelle",
+        "Aucun pays actuel"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "Le drapeau à bandes horizontales jaune et bleu appartient à quel petit royaume africain ?",
+      "options": [
+        "Eswatini",
+        "Lesotho",
+        "Botswana",
+        "Namibie"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau bleu avec un soleil doré à seize rayons ?",
+      "options": [
+        "Argentine",
+        "Uruguay",
+        "Philippines",
+        "Kazakhstan"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le drapeau à bandes horizontales rouge, blanche avec des étoiles bleues en cercle appartient à quel pays des Caraïbes ?",
+      "options": [
+        "Cuba",
+        "Panama",
+        "République dominicaine",
+        "Porto Rico"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau à bandes horizontales verte, jaune avec un blason central et deux animaux ?",
+      "options": [
+        "Afrique du Sud",
+        "Brésil",
+        "Bolivie",
+        "Équateur"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau blanc, bleu, blanc en bandes horizontales appartient à quel pays d'Amérique centrale ?",
+      "options": [
+        "Guatemala",
+        "Nicaragua",
+        "Honduras",
+        "Salvador"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge avec une bande diagonale blanche portant une étoile bleue ?",
+      "options": [
+        "Chili",
+        "Panama",
+        "Porto Rico",
+        "Cuba"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Le drapeau vert, blanc, orange avec une roue centrale de 24 rayons appartient à quel grand pays d'Asie du Sud ?",
+      "options": [
+        "Pakistan",
+        "Inde",
+        "Bangladesh",
+        "Népal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quel pays a un drapeau rouge à bande jaune horizontale centrale portant l'inscription en arabe ?",
+      "options": [
+        "Arabie Saoudite",
+        "Égypte",
+        "Émirats arabes unis",
+        "Jordanie"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "Le drapeau à bandes horizontales bleu, blanc, rouge, avec des étoiles blanches à gauche appartient à quel pays d'Océanie ?",
+      "options": [
+        "Samoa",
+        "Fidji",
+        "Tuvalu",
+        "Vanuatu"
+      ],
+      "correct": 2
+    }
+  ]
 };
 
 /* ---------- Constantes ---------- */
