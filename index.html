@@ -143,6 +143,17 @@
     font-weight:600;
     margin-bottom:4px;
   }
+  .timer-box{
+    color: var(--gold);
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:10px;
+  }
+  .timer-box.warning{
+    color: var(--coral);
+    animation: pulse 0.5s infinite alternate;
+  }
+  @keyframes pulse{ from{opacity:1;} to{opacity:0.4;} }
   .answers{
     display:flex;
     flex-direction:column;
@@ -12837,6 +12848,35 @@ function saveProfile(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(profile
 let profile = loadProfile();
 let state = { screen: "home", category: null, currentQ: null, answered: false, lastCorrect: false };
 
+/* ---------- Compteur de 8 secondes par question ---------- */
+let questionTimerInterval = null;
+let questionTimeLeft = 8;
+
+function clearQuestionTimer(){
+  if(questionTimerInterval){ clearInterval(questionTimerInterval); questionTimerInterval = null; }
+}
+
+function startQuestionTimer(){
+  clearQuestionTimer();
+  questionTimeLeft = 8;
+  updateTimerDisplay();
+  questionTimerInterval = setInterval(()=>{
+    questionTimeLeft--;
+    updateTimerDisplay();
+    if(questionTimeLeft <= 0){
+      clearQuestionTimer();
+      if(!state.answered) answerQuestion(-1); // temps écoulé = mauvaise réponse
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay(){
+  const el = document.getElementById("timer-count");
+  const box = document.getElementById("timer-box");
+  if(el) el.textContent = questionTimeLeft;
+  if(box) box.classList.toggle("warning", questionTimeLeft <= 3);
+}
+
 function level(){ return Math.floor(profile.xp/100)+1; }
 
 /* ---------- Récupération des vies ---------- */
@@ -12975,6 +13015,7 @@ function renderQuestion(){
   card.innerHTML = `
     <a class="back-link" id="back-to-cats">⬅️ Changer de catégorie</a>
     <div class="cat-label">${cat.emoji} ${cat.label}</div>
+    <div class="timer-box" id="timer-box">⏱️ <span id="timer-count">8</span>s</div>
     <div class="question-text">${q.q}</div>
     <div class="answers">
       ${q.options.map((opt,i)=>`<button class="answer-btn" data-i="${i}">${opt}</button>`).join("")}
@@ -12984,11 +13025,13 @@ function renderQuestion(){
   card.querySelectorAll(".answer-btn").forEach(btn=>{
     btn.onclick = ()=> answerQuestion(parseInt(btn.dataset.i));
   });
+  startQuestionTimer();
 }
 
 function answerQuestion(i){
   if(state.answered) return;
   state.answered = true;
+  clearQuestionTimer();
   const q = state.currentQ;
   const correct = i === q.correct;
   state.lastCorrect = correct;
@@ -13124,6 +13167,7 @@ function renderHelp(){
 }
 
 function go(screen){
+  clearQuestionTimer();
   state.screen = screen;
   render();
 }
